@@ -1,0 +1,53 @@
+project:
+  name: "Industrial Safety Monitoring"
+  version: "1.0"
+
+vision:
+  camera_index: 0
+  ppe_model_path: "models/ppe_model.pt"
+  confidence_threshold: 0.45
+  frame_width: 960
+  frame_height: 540
+  use_default_yolo_if_missing: true
+
+sensor:
+  mode: "simulated" # simulated or serial
+  serial_port: "COM4" # e.g. COM4 on Windows, /dev/ttyUSB0 on Linux
+  baud_rate: 115200
+
+thresholds:
+  gas: 400
+  temperature: 50
+  vibration: 300
+
+mqtt:
+  enabled: false
+  broker: "broker.hivemq.com"
+  port: 1883
+  topic: "industrial/safety/alerts"
+
+email:
+  enabled: false
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  sender: "your_email@gmail.com"
+  password: "your_app_password"
+  receiver: "supervisor@gmail.com"
+
+database:
+  path: "data/safety_events.db"
+
+logging:
+  log_file: "logs/system.log"
+  level: "INFO"
+
+risk_weights:
+  sensor_weight: 0.6
+  vision_weight: 0.4
+
+zones:
+  restricted_area:
+    x1: 300
+    y1: 120
+    x2: 700
+    y2: 500

@@ -1,0 +1,1 @@
+app config.yaml data logs main.py models requirements.py run_system.py test_mqtt.py venv yolov8n.pt text=auto

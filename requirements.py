@@ -1,0 +1,9 @@
+opencv-python
+ultralytics
+pyyaml
+paho-mqtt
+pyserial
+numpy
+flask
+torch
+torchvision
