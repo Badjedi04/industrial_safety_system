@@ -35,6 +35,17 @@ def main() -> None:
 
             frame = camera_manager.read_frame(camera)
             if frame is None:
+                if camera_manager.is_video_folder_source():
+                    camera = camera_manager.advance_to_next_video(camera)
+                    if camera is None:
+                        logger.info("All videos processed from folder")
+                        break
+                    continue
+
+                if camera_manager.is_video_source():
+                    logger.info("End of video file reached")
+                    break
+
                 logger.warning("No frame received from camera")
                 continue
 

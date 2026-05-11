@@ -3,7 +3,10 @@ project:
   version: "1.0"
 
 vision:
+  input_source: "camera" # set to "video" to use a single video file, or "video_folder" to process all videos in a folder
   camera_index: 0
+  video_path: "videos/input.mp4"
+  video_directory: "videos"
   ppe_model_path: "models/ppe_model.pt"
   confidence_threshold: 0.45
   frame_width: 960
