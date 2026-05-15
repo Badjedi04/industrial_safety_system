@@ -70,6 +70,14 @@ class CameraManager:
 
         return self._open_video_file(self.video_files[self.current_video_index])
 
+    def get_current_video_name(self) -> str:
+        if self.video_files and 0 <= self.current_video_index < len(self.video_files):
+            return str(self.video_files[self.current_video_index])
+        return ""
+
+    def has_next_video(self) -> bool:
+        return self.input_source == "video_folder" and self.current_video_index + 1 < len(self.video_files)
+
     def read_frame(self, cap: cv2.VideoCapture) -> Optional[Any]:
         ret, frame = cap.read()
         if not ret:
@@ -93,5 +101,3 @@ class CameraManager:
 
     def is_video_folder_source(self) -> bool:
         return self.input_source == "video_folder"
-    def is_video_source(self) -> bool:
-        return self.input_source == "video"

@@ -36,9 +36,27 @@ def main() -> None:
             frame = camera_manager.read_frame(camera)
             if frame is None:
                 if camera_manager.is_video_folder_source():
-                    camera = camera_manager.advance_to_next_video(camera)
+                    logger.info("Finished video: %s", camera_manager.get_current_video_name())
+                    if not camera_manager.has_next_video():
+                        logger.info("No more videos in folder")
+                        break
+
+                    logger.info("Press 'n' to open the next video, or 'q' to quit")
+                    while True:
+                        key = cv2.waitKey(0) & 0xFF
+                        if key == ord("n"):
+                            camera = camera_manager.advance_to_next_video(camera)
+                            if camera is None:
+                                logger.info("All videos processed from folder")
+                                break
+                            logger.info("Opening next video: %s", camera_manager.get_current_video_name())
+                            break
+                        if key == ord("q"):
+                            logger.info("Exit requested by user")
+                            camera = None
+                            break
+
                     if camera is None:
-                        logger.info("All videos processed from folder")
                         break
                     continue
 
