@@ -13521,3 +13521,146 @@
 2026-06-02 20:57:18,777 | INFO | industrial_safety_system | Interrupted by user
 2026-06-02 20:57:18,886 | INFO | industrial_safety_system | Camera released and windows destroyed
 2026-06-02 20:57:18,886 | INFO | industrial_safety_system | System shutdown complete
+2026-06-02 21:21:20,175 | INFO | industrial_safety_system | Starting Industrial Safety Monitoring System
+2026-06-02 21:21:20,176 | WARNING | industrial_safety_system | Custom PPE model not found at models/ppe_model.pt. Using default YOLO fallback; helmet/no-helmet alerts may not work correctly.
+2026-06-02 21:21:20,176 | WARNING | industrial_safety_system | Custom model not found at models/ppe_model.pt. Falling back to yolov8n.pt
+2026-06-02 21:21:20,338 | INFO | industrial_safety_system | Database initialized at data/safety_events.db
+2026-06-02 21:21:20,656 | INFO | industrial_safety_system | Video source initialized successfully: data/construction_site.mp4
+2026-06-02 21:21:20,656 | INFO | industrial_safety_system | Sensor data | raw={'gas': 350.19, 'temperature': 37.01, 'vibration': 154.63} | processed={'gas': 350.19, 'temperature': 37.01, 'vibration': 154.63}
+2026-06-02 21:21:21,012 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:21,013 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:21:21,013 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Combined multimodal anomaly score is very high
+2026-06-02 21:21:21,017 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:21 | HIGH_RISK | Combined multimodal anomaly score is very high
+2026-06-02 21:21:21,147 | INFO | industrial_safety_system | Sensor data | raw={'gas': 199.67, 'temperature': 31.35, 'vibration': 105.13} | processed={'gas': 274.93, 'temperature': 34.18, 'vibration': 129.88}
+2026-06-02 21:21:21,268 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:21,268 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:21:21,269 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:21,273 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:21 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:21,300 | INFO | industrial_safety_system | Sensor data | raw={'gas': 315.42, 'temperature': 35.16, 'vibration': 131.23} | processed={'gas': 288.43, 'temperature': 34.51, 'vibration': 130.33}
+2026-06-02 21:21:21,397 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:21,403 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:21 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:21,424 | INFO | industrial_safety_system | Sensor data | raw={'gas': 205.82, 'temperature': 55.17, 'vibration': 139.48} | processed={'gas': 267.77, 'temperature': 39.67, 'vibration': 132.62}
+2026-06-02 21:21:21,501 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:21,501 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:21:21,502 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Combined multimodal anomaly score is very high
+2026-06-02 21:21:21,505 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:21 | HIGH_RISK | Combined multimodal anomaly score is very high
+2026-06-02 21:21:21,533 | INFO | industrial_safety_system | Sensor data | raw={'gas': 335.43, 'temperature': 31.56, 'vibration': 131.3} | processed={'gas': 281.31, 'temperature': 38.05, 'vibration': 132.35}
+2026-06-02 21:21:21,607 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:21,608 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:21:21,608 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:21,612 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:21 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:21,643 | INFO | industrial_safety_system | Sensor data | raw={'gas': 237.72, 'temperature': 31.51, 'vibration': 88.09} | processed={'gas': 258.81, 'temperature': 36.95, 'vibration': 119.05}
+2026-06-02 21:21:21,719 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:21,724 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:21 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:21,751 | INFO | industrial_safety_system | Sensor data | raw={'gas': 201.52, 'temperature': 28.7, 'vibration': 95.76} | processed={'gas': 259.18, 'temperature': 36.42, 'vibration': 117.17}
+2026-06-02 21:21:21,840 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:21,845 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:21 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:21,877 | INFO | industrial_safety_system | Sensor data | raw={'gas': 282.27, 'temperature': 39.77, 'vibration': 128.88} | processed={'gas': 252.55, 'temperature': 37.34, 'vibration': 116.7}
+2026-06-02 21:21:21,960 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:21,966 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:21 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:21,993 | INFO | industrial_safety_system | Sensor data | raw={'gas': 229.46, 'temperature': 39.32, 'vibration': 96.14} | processed={'gas': 257.28, 'temperature': 34.17, 'vibration': 108.03}
+2026-06-02 21:21:22,079 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:22,084 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:22 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:22,102 | INFO | industrial_safety_system | Sensor data | raw={'gas': 272.94, 'temperature': 36.13, 'vibration': 158.64} | processed={'gas': 244.78, 'temperature': 35.09, 'vibration': 113.5}
+2026-06-02 21:21:22,178 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:21:22,183 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:22 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:22,220 | INFO | industrial_safety_system | Sensor data | raw={'gas': 353.38, 'temperature': 33.63, 'vibration': 104.04} | processed={'gas': 267.91, 'temperature': 35.51, 'vibration': 116.69}
+2026-06-02 21:21:22,305 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:22,311 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:22 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:22,346 | INFO | industrial_safety_system | Sensor data | raw={'gas': 300.57, 'temperature': 31.87, 'vibration': 108.45} | processed={'gas': 287.72, 'temperature': 36.14, 'vibration': 119.23}
+2026-06-02 21:21:22,429 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:22,435 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:22 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:22,471 | INFO | industrial_safety_system | Sensor data | raw={'gas': 229.09, 'temperature': 33.58, 'vibration': 106.97} | processed={'gas': 277.09, 'temperature': 34.91, 'vibration': 114.85}
+2026-06-02 21:21:22,558 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:22,580 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:22 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:22,612 | INFO | industrial_safety_system | Sensor data | raw={'gas': 321.59, 'temperature': 39.92, 'vibration': 169.43} | processed={'gas': 295.51, 'temperature': 35.03, 'vibration': 129.51}
+2026-06-02 21:21:22,693 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:22,699 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:22 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:22,721 | INFO | industrial_safety_system | Sensor data | raw={'gas': 274.19, 'temperature': 35.54, 'vibration': 150.4} | processed={'gas': 295.76, 'temperature': 34.91, 'vibration': 127.86}
+2026-06-02 21:21:22,800 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:22,805 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:22 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:22,832 | INFO | industrial_safety_system | Sensor data | raw={'gas': 202.95, 'temperature': 36.32, 'vibration': 123.82} | processed={'gas': 265.68, 'temperature': 35.45, 'vibration': 131.81}
+2026-06-02 21:21:22,908 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:22,914 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:22 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:22,957 | INFO | industrial_safety_system | Sensor data | raw={'gas': 187.37, 'temperature': 28.58, 'vibration': 87.12} | processed={'gas': 243.04, 'temperature': 34.79, 'vibration': 127.55}
+2026-06-02 21:21:23,041 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:23,045 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:23 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:23,079 | INFO | industrial_safety_system | Sensor data | raw={'gas': 255.78, 'temperature': 36.08, 'vibration': 142.82} | processed={'gas': 248.38, 'temperature': 35.29, 'vibration': 134.72}
+2026-06-02 21:21:23,161 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:23,167 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:23 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:23,186 | INFO | industrial_safety_system | Sensor data | raw={'gas': 245.77, 'temperature': 33.91, 'vibration': 146.67} | processed={'gas': 233.21, 'temperature': 34.09, 'vibration': 130.17}
+2026-06-02 21:21:23,259 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:21:23,265 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:23 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:23,290 | INFO | industrial_safety_system | Sensor data | raw={'gas': 205.15, 'temperature': 39.48, 'vibration': 83.83} | processed={'gas': 219.4, 'temperature': 34.87, 'vibration': 116.85}
+2026-06-02 21:21:23,363 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:23,368 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:23 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:23,405 | INFO | industrial_safety_system | Sensor data | raw={'gas': 358.15, 'temperature': 28.98, 'vibration': 148.12} | processed={'gas': 250.44, 'temperature': 33.41, 'vibration': 121.71}
+2026-06-02 21:21:23,487 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:21:23,492 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:23 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:23,527 | INFO | industrial_safety_system | Sensor data | raw={'gas': 316.17, 'temperature': 33.2, 'vibration': 81.92} | processed={'gas': 276.2, 'temperature': 34.33, 'vibration': 120.67}
+2026-06-02 21:21:23,608 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:23,612 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:23 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:23,650 | INFO | industrial_safety_system | Sensor data | raw={'gas': 322.31, 'temperature': 33.59, 'vibration': 99.43} | processed={'gas': 289.51, 'temperature': 33.83, 'vibration': 111.99}
+2026-06-02 21:21:23,744 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:21:23,765 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:23 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:23,806 | INFO | industrial_safety_system | Sensor data | raw={'gas': 186.39, 'temperature': 38.91, 'vibration': 159.45} | processed={'gas': 277.63, 'temperature': 34.83, 'vibration': 114.55}
+2026-06-02 21:21:23,887 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:21:23,892 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:23 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:23,933 | INFO | industrial_safety_system | Sensor data | raw={'gas': 246.64, 'temperature': 33.25, 'vibration': 156.52} | processed={'gas': 285.93, 'temperature': 33.59, 'vibration': 129.09}
+2026-06-02 21:21:24,017 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:24,023 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:24 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:24,050 | INFO | industrial_safety_system | Sensor data | raw={'gas': 227.84, 'temperature': 29.86, 'vibration': 95.48} | processed={'gas': 259.87, 'temperature': 33.76, 'vibration': 118.56}
+2026-06-02 21:21:24,130 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:24,147 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:24 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:24,173 | INFO | industrial_safety_system | Sensor data | raw={'gas': 264.14, 'temperature': 35.11, 'vibration': 153.14} | processed={'gas': 249.46, 'temperature': 34.14, 'vibration': 132.8}
+2026-06-02 21:21:24,249 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:24,254 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:24 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:24,276 | INFO | industrial_safety_system | Sensor data | raw={'gas': 300.14, 'temperature': 38.51, 'vibration': 96.44} | processed={'gas': 245.03, 'temperature': 35.13, 'vibration': 132.21}
+2026-06-02 21:21:24,344 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:24,354 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:24 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:24,380 | INFO | industrial_safety_system | Sensor data | raw={'gas': 193.22, 'temperature': 28.16, 'vibration': 103.57} | processed={'gas': 246.4, 'temperature': 32.98, 'vibration': 121.03}
+2026-06-02 21:21:24,459 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:24,463 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:24 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:24,493 | INFO | industrial_safety_system | Sensor data | raw={'gas': 184.43, 'temperature': 29.24, 'vibration': 138.01} | processed={'gas': 233.95, 'temperature': 32.18, 'vibration': 117.33}
+2026-06-02 21:21:24,574 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:24,578 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:24 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:24,601 | INFO | industrial_safety_system | Sensor data | raw={'gas': 219.83, 'temperature': 34.71, 'vibration': 117.12} | processed={'gas': 232.35, 'temperature': 33.15, 'vibration': 121.66}
+2026-06-02 21:21:24,679 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:21:24,683 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:24 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:24,708 | INFO | industrial_safety_system | Sensor data | raw={'gas': 247.99, 'temperature': 32.47, 'vibration': 136.16} | processed={'gas': 229.12, 'temperature': 32.62, 'vibration': 118.26}
+2026-06-02 21:21:24,796 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:21:24,807 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:24 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:24,827 | INFO | industrial_safety_system | Sensor data | raw={'gas': 217.65, 'temperature': 29.28, 'vibration': 116.74} | processed={'gas': 212.62, 'temperature': 30.77, 'vibration': 122.32}
+2026-06-02 21:21:24,900 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:21:24,918 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:24 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:24,947 | INFO | industrial_safety_system | Sensor data | raw={'gas': 294.65, 'temperature': 34.7, 'vibration': 91.26} | processed={'gas': 232.91, 'temperature': 32.08, 'vibration': 119.86}
+2026-06-02 21:21:25,032 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:21:25,037 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:25 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:25,069 | INFO | industrial_safety_system | Sensor data | raw={'gas': 217.24, 'temperature': 37.37, 'vibration': 95.83} | processed={'gas': 239.47, 'temperature': 33.71, 'vibration': 111.42}
+2026-06-02 21:21:25,164 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:21:25,177 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:25 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:25,199 | INFO | industrial_safety_system | Sensor data | raw={'gas': 243.78, 'temperature': 29.47, 'vibration': 106.56} | processed={'gas': 244.26, 'temperature': 32.66, 'vibration': 109.31}
+2026-06-02 21:21:25,294 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:25,313 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:25 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:25,348 | INFO | industrial_safety_system | Sensor data | raw={'gas': 198.09, 'temperature': 31.15, 'vibration': 119.77} | processed={'gas': 234.28, 'temperature': 32.39, 'vibration': 106.03}
+2026-06-02 21:21:25,433 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:25,453 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:25 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:25,479 | INFO | industrial_safety_system | Sensor data | raw={'gas': 329.88, 'temperature': 34.08, 'vibration': 89.88} | processed={'gas': 256.73, 'temperature': 33.35, 'vibration': 100.66}
+2026-06-02 21:21:25,562 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:25,574 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:25 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:25,613 | INFO | industrial_safety_system | Sensor data | raw={'gas': 306.75, 'temperature': 38.26, 'vibration': 155.71} | processed={'gas': 259.15, 'temperature': 34.07, 'vibration': 113.55}
+2026-06-02 21:21:25,699 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:25,707 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:25 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:25,735 | INFO | industrial_safety_system | Sensor data | raw={'gas': 303.75, 'temperature': 37.87, 'vibration': 149.46} | processed={'gas': 276.45, 'temperature': 34.17, 'vibration': 124.28}
+2026-06-02 21:21:25,825 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:25,829 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:25 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:25,860 | INFO | industrial_safety_system | Sensor data | raw={'gas': 211.82, 'temperature': 36.91, 'vibration': 106.08} | processed={'gas': 270.06, 'temperature': 35.65, 'vibration': 124.18}
+2026-06-02 21:21:25,961 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:25,969 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:25 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:26,136 | INFO | industrial_safety_system | Sensor data | raw={'gas': 273.2, 'temperature': 28.33, 'vibration': 146.14} | processed={'gas': 285.08, 'temperature': 35.09, 'vibration': 129.45}
+2026-06-02 21:21:26,652 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:21:26,671 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:21:26 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:21:26,728 | INFO | industrial_safety_system | Sensor data | raw={'gas': 200.86, 'temperature': 36.79, 'vibration': 170.68} | processed={'gas': 259.28, 'temperature': 35.63, 'vibration': 145.61}
+2026-06-02 21:21:26,802 | INFO | industrial_safety_system | Interrupted by user
+2026-06-02 21:21:26,904 | INFO | industrial_safety_system | Video source released and windows destroyed
+2026-06-02 21:21:26,905 | INFO | industrial_safety_system | System shutdown complete
