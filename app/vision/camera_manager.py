@@ -43,6 +43,7 @@ class CameraManager:
         self.logger.info("Video source initialized successfully: %s", source_name)
         return cap
 
+
     def _scan_video_folder(self, folder_path: str) -> List[Path]:
         folder = Path(folder_path)
         if not folder.exists() or not folder.is_dir():
