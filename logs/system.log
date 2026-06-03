@@ -13755,3 +13755,1132 @@
 2026-06-02 21:24:24,077 | INFO | industrial_safety_system | Video source released and windows destroyed
 2026-06-02 21:24:24,077 | INFO | industrial_safety_system | System shutdown complete
 2026-06-02 21:28:17,385 | WARNING | industrial_safety_system | Custom model not found at models/ppe_model.pt. Falling back to yolov8n.pt
+2026-06-02 21:34:36,138 | INFO | industrial_safety_system | Starting Industrial Safety Monitoring System
+2026-06-02 21:34:36,139 | WARNING | industrial_safety_system | Custom PPE model not found at models/ppe_model.pt. Using default YOLO fallback; helmet/no-helmet alerts may not work correctly.
+2026-06-02 21:34:36,140 | WARNING | industrial_safety_system | Custom model not found at models/ppe_model.pt. Falling back to yolov8n.pt
+2026-06-02 21:34:36,328 | WARNING | industrial_safety_system | PPE model has no helmet/no_helmet classes. Falling back to heuristic head-region inference.
+2026-06-02 21:34:36,339 | INFO | industrial_safety_system | Database initialized at data/safety_events.db
+2026-06-02 21:34:36,560 | INFO | industrial_safety_system | Video source initialized successfully: data/construction_site.mp4
+2026-06-02 21:34:36,560 | INFO | industrial_safety_system | Sensor data | raw={'gas': 200.33, 'temperature': 34.11, 'vibration': 155.01} | processed={'gas': 200.33, 'temperature': 34.11, 'vibration': 155.01}
+2026-06-02 21:34:36,993 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:36,994 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:36,994 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:37,013 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:36 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:37,175 | INFO | industrial_safety_system | Sensor data | raw={'gas': 243.49, 'temperature': 37.48, 'vibration': 131.96} | processed={'gas': 221.91, 'temperature': 35.8, 'vibration': 143.49}
+2026-06-02 21:34:37,284 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:37,327 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:37 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:37,362 | INFO | industrial_safety_system | Sensor data | raw={'gas': 185.62, 'temperature': 31.73, 'vibration': 164.19} | processed={'gas': 209.81, 'temperature': 34.44, 'vibration': 150.39}
+2026-06-02 21:34:37,496 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:37,615 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:37 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:37,636 | INFO | industrial_safety_system | Sensor data | raw={'gas': 191.7, 'temperature': 33.7, 'vibration': 175.93} | processed={'gas': 205.29, 'temperature': 34.26, 'vibration': 156.77}
+2026-06-02 21:34:37,733 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:37,739 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:37 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:37,786 | INFO | industrial_safety_system | Sensor data | raw={'gas': 292.26, 'temperature': 28.24, 'vibration': 158.66} | processed={'gas': 222.68, 'temperature': 33.05, 'vibration': 157.15}
+2026-06-02 21:34:37,887 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:37,892 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:37 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:37,925 | INFO | industrial_safety_system | Sensor data | raw={'gas': 229.11, 'temperature': 36.98, 'vibration': 130.94} | processed={'gas': 228.44, 'temperature': 33.63, 'vibration': 152.34}
+2026-06-02 21:34:38,017 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:38,024 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:38 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:38,051 | INFO | industrial_safety_system | Sensor data | raw={'gas': 343.56, 'temperature': 31.03, 'vibration': 143.38} | processed={'gas': 248.45, 'temperature': 32.34, 'vibration': 154.62}
+2026-06-02 21:34:38,143 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:38,149 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:38 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:38,189 | INFO | industrial_safety_system | Sensor data | raw={'gas': 188.26, 'temperature': 31.33, 'vibration': 85.11} | processed={'gas': 248.98, 'temperature': 32.26, 'vibration': 138.8}
+2026-06-02 21:34:38,287 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:38,292 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:38 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:38,313 | INFO | industrial_safety_system | Sensor data | raw={'gas': 299.17, 'temperature': 39.79, 'vibration': 126.8} | processed={'gas': 270.47, 'temperature': 33.47, 'vibration': 128.98}
+2026-06-02 21:34:38,405 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:38,422 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:38 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:38,467 | INFO | industrial_safety_system | Sensor data | raw={'gas': 246.03, 'temperature': 34.04, 'vibration': 107.12} | processed={'gas': 261.23, 'temperature': 34.63, 'vibration': 118.67}
+2026-06-02 21:34:38,565 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:38,566 | INFO | industrial_safety_system | PPE detections count: 7
+2026-06-02 21:34:38,566 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:38,566 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:38,571 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:38 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:38,607 | INFO | industrial_safety_system | Sensor data | raw={'gas': 272.34, 'temperature': 36.43, 'vibration': 409.62} | processed={'gas': 269.87, 'temperature': 34.52, 'vibration': 174.41}
+2026-06-02 21:34:38,698 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:38,699 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:38,703 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:38 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:38,731 | INFO | industrial_safety_system | Sensor data | raw={'gas': 274.47, 'temperature': 35.92, 'vibration': 171.0} | processed={'gas': 256.05, 'temperature': 35.5, 'vibration': 179.93}
+2026-06-02 21:34:38,817 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:38,817 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:38,834 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:38 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:38,860 | INFO | industrial_safety_system | Sensor data | raw={'gas': 325.34, 'temperature': 35.41, 'vibration': 158.45} | processed={'gas': 283.47, 'temperature': 36.32, 'vibration': 194.6}
+2026-06-02 21:34:38,950 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:38,950 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:38,955 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:38 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:38,993 | INFO | industrial_safety_system | Sensor data | raw={'gas': 328.9, 'temperature': 35.88, 'vibration': 110.83} | processed={'gas': 289.42, 'temperature': 35.54, 'vibration': 191.4}
+2026-06-02 21:34:39,095 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:39,095 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:39,100 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:39 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:39,134 | INFO | industrial_safety_system | Sensor data | raw={'gas': 230.43, 'temperature': 38.1, 'vibration': 160.83} | processed={'gas': 286.3, 'temperature': 36.35, 'vibration': 202.15}
+2026-06-02 21:34:39,227 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:39,228 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:39,234 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:39 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:39,260 | INFO | industrial_safety_system | Sensor data | raw={'gas': 343.32, 'temperature': 34.87, 'vibration': 140.04} | processed={'gas': 300.49, 'temperature': 36.04, 'vibration': 148.23}
+2026-06-02 21:34:39,357 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:39,357 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:39,362 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:39 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:39,385 | INFO | industrial_safety_system | Sensor data | raw={'gas': 313.11, 'temperature': 36.06, 'vibration': 111.66} | processed={'gas': 308.22, 'temperature': 36.06, 'vibration': 136.36}
+2026-06-02 21:34:39,471 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:39,471 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:39,476 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:39 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:39,510 | INFO | industrial_safety_system | Sensor data | raw={'gas': 200.46, 'temperature': 38.49, 'vibration': 148.27} | processed={'gas': 283.24, 'temperature': 36.68, 'vibration': 134.33}
+2026-06-02 21:34:39,598 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:39,599 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:39,599 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:39,605 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:39 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:39,634 | INFO | industrial_safety_system | Sensor data | raw={'gas': 231.25, 'temperature': 37.1, 'vibration': 101.95} | processed={'gas': 263.71, 'temperature': 36.92, 'vibration': 132.55}
+2026-06-02 21:34:39,718 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:39,719 | INFO | industrial_safety_system | PPE detections count: 6
+2026-06-02 21:34:39,719 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:39,719 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:39,724 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:39 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:39,758 | INFO | industrial_safety_system | Sensor data | raw={'gas': 240.17, 'temperature': 31.74, 'vibration': 177.95} | processed={'gas': 265.66, 'temperature': 35.65, 'vibration': 135.97}
+2026-06-02 21:34:39,848 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:39,848 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:39,848 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:39,853 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:39 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:39,885 | INFO | industrial_safety_system | Sensor data | raw={'gas': 182.06, 'temperature': 34.26, 'vibration': 86.23} | processed={'gas': 233.41, 'temperature': 35.53, 'vibration': 125.21}
+2026-06-02 21:34:39,971 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:39,971 | INFO | industrial_safety_system | PPE detections count: 6
+2026-06-02 21:34:39,971 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:39,972 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:39,976 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:39 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:40,008 | INFO | industrial_safety_system | Sensor data | raw={'gas': 222.42, 'temperature': 37.77, 'vibration': 82.19} | processed={'gas': 215.27, 'temperature': 35.87, 'vibration': 119.32}
+2026-06-02 21:34:40,105 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:40,105 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:40,106 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:40,109 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:40 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:40,133 | INFO | industrial_safety_system | Sensor data | raw={'gas': 291.99, 'temperature': 39.17, 'vibration': 133.41} | processed={'gas': 233.58, 'temperature': 36.01, 'vibration': 116.35}
+2026-06-02 21:34:40,221 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:40,225 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:40 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:40,244 | INFO | industrial_safety_system | Sensor data | raw={'gas': 341.19, 'temperature': 32.27, 'vibration': 143.69} | processed={'gas': 255.57, 'temperature': 35.04, 'vibration': 124.69}
+2026-06-02 21:34:40,333 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:40,340 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:40 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:40,365 | INFO | industrial_safety_system | Sensor data | raw={'gas': 312.09, 'temperature': 30.14, 'vibration': 161.08} | processed={'gas': 269.95, 'temperature': 34.72, 'vibration': 121.32}
+2026-06-02 21:34:40,444 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:40,464 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:40 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:40,500 | INFO | industrial_safety_system | Sensor data | raw={'gas': 227.73, 'temperature': 35.65, 'vibration': 159.07} | processed={'gas': 279.08, 'temperature': 35.0, 'vibration': 135.89}
+2026-06-02 21:34:40,589 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:40,609 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:40 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:40,640 | INFO | industrial_safety_system | Sensor data | raw={'gas': 248.23, 'temperature': 30.79, 'vibration': 111.5} | processed={'gas': 284.25, 'temperature': 33.6, 'vibration': 141.75}
+2026-06-02 21:34:40,735 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:40,752 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:40 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:40,789 | INFO | industrial_safety_system | Sensor data | raw={'gas': 354.38, 'temperature': 33.82, 'vibration': 136.07} | processed={'gas': 296.72, 'temperature': 32.53, 'vibration': 142.28}
+2026-06-02 21:34:40,883 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:40,887 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:40 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:40,924 | INFO | industrial_safety_system | Sensor data | raw={'gas': 350.78, 'temperature': 28.66, 'vibration': 161.17} | processed={'gas': 298.64, 'temperature': 31.81, 'vibration': 145.78}
+2026-06-02 21:34:41,017 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:41,039 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:41 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:41,069 | INFO | industrial_safety_system | Sensor data | raw={'gas': 240.95, 'temperature': 33.86, 'vibration': 141.46} | processed={'gas': 284.41, 'temperature': 32.56, 'vibration': 141.85}
+2026-06-02 21:34:41,166 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:41,185 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:41 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:41,212 | INFO | industrial_safety_system | Sensor data | raw={'gas': 297.19, 'temperature': 30.86, 'vibration': 161.54} | processed={'gas': 298.31, 'temperature': 31.6, 'vibration': 142.35}
+2026-06-02 21:34:41,304 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:41,305 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:41,305 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:41,305 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:41,313 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:41 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:41,345 | INFO | industrial_safety_system | Sensor data | raw={'gas': 244.32, 'temperature': 36.0, 'vibration': 173.96} | processed={'gas': 297.52, 'temperature': 32.64, 'vibration': 154.84}
+2026-06-02 21:34:41,439 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:41,439 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:41,439 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:41,444 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:41 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:41,471 | INFO | industrial_safety_system | Sensor data | raw={'gas': 326.63, 'temperature': 30.77, 'vibration': 150.47} | processed={'gas': 291.97, 'temperature': 32.03, 'vibration': 157.72}
+2026-06-02 21:34:41,577 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:41,583 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:41 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:41,622 | INFO | industrial_safety_system | Sensor data | raw={'gas': 263.28, 'temperature': 35.57, 'vibration': 168.42} | processed={'gas': 274.47, 'temperature': 33.41, 'vibration': 159.17}
+2026-06-02 21:34:41,710 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:41,710 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:41,710 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:41,711 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:41,727 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:41 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:41,763 | INFO | industrial_safety_system | Sensor data | raw={'gas': 350.81, 'temperature': 32.99, 'vibration': 122.68} | processed={'gas': 296.45, 'temperature': 33.24, 'vibration': 155.41}
+2026-06-02 21:34:41,855 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:41,856 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:41,874 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:41 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:41,915 | INFO | industrial_safety_system | Sensor data | raw={'gas': 199.01, 'temperature': 31.16, 'vibration': 150.86} | processed={'gas': 276.81, 'temperature': 33.3, 'vibration': 153.28}
+2026-06-02 21:34:42,024 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:42,024 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:42,031 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:42 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:42,063 | INFO | industrial_safety_system | Sensor data | raw={'gas': 292.94, 'temperature': 28.44, 'vibration': 144.54} | processed={'gas': 286.53, 'temperature': 31.79, 'vibration': 147.39}
+2026-06-02 21:34:42,150 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:42,151 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:42,163 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:42 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:42,188 | INFO | industrial_safety_system | Sensor data | raw={'gas': 344.01, 'temperature': 33.15, 'vibration': 158.06} | processed={'gas': 290.01, 'temperature': 32.26, 'vibration': 148.91}
+2026-06-02 21:34:42,276 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:42,276 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:42,280 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:42 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:42,312 | INFO | industrial_safety_system | Sensor data | raw={'gas': 206.93, 'temperature': 35.51, 'vibration': 155.11} | processed={'gas': 278.74, 'temperature': 32.25, 'vibration': 146.25}
+2026-06-02 21:34:42,424 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:42,424 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:42,443 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:42 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:42,483 | INFO | industrial_safety_system | Sensor data | raw={'gas': 223.55, 'temperature': 38.67, 'vibration': 157.46} | processed={'gas': 253.29, 'temperature': 33.39, 'vibration': 153.21}
+2026-06-02 21:34:42,583 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:42,583 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:42,598 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:42 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:42,654 | INFO | industrial_safety_system | Sensor data | raw={'gas': 271.2, 'temperature': 38.62, 'vibration': 146.69} | processed={'gas': 267.73, 'temperature': 34.88, 'vibration': 152.37}
+2026-06-02 21:34:42,745 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:42,746 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:42,746 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:42,770 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:42 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:42,811 | INFO | industrial_safety_system | Sensor data | raw={'gas': 242.48, 'temperature': 38.78, 'vibration': 157.14} | processed={'gas': 257.63, 'temperature': 36.95, 'vibration': 154.89}
+2026-06-02 21:34:42,915 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:42,920 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:42 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:42,946 | INFO | industrial_safety_system | Sensor data | raw={'gas': 195.59, 'temperature': 28.71, 'vibration': 105.88} | processed={'gas': 227.95, 'temperature': 36.06, 'vibration': 144.46}
+2026-06-02 21:34:43,055 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:43,055 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:43,056 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:43,056 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:43,061 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:43 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:43,091 | INFO | industrial_safety_system | Sensor data | raw={'gas': 204.85, 'temperature': 33.3, 'vibration': 120.34} | processed={'gas': 227.53, 'temperature': 35.62, 'vibration': 137.5}
+2026-06-02 21:34:43,197 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:43,197 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:43,212 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:43 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:43,246 | INFO | industrial_safety_system | Sensor data | raw={'gas': 350.53, 'temperature': 39.83, 'vibration': 147.32} | processed={'gas': 252.93, 'temperature': 35.85, 'vibration': 135.47}
+2026-06-02 21:34:43,348 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:43,349 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:43,353 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:43 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:43,388 | INFO | industrial_safety_system | Sensor data | raw={'gas': 248.9, 'temperature': 29.99, 'vibration': 148.11} | processed={'gas': 248.47, 'temperature': 34.12, 'vibration': 135.76}
+2026-06-02 21:34:43,499 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:43,499 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:43,517 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:43 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:43,547 | INFO | industrial_safety_system | Sensor data | raw={'gas': 325.07, 'temperature': 29.57, 'vibration': 80.42} | processed={'gas': 264.99, 'temperature': 32.28, 'vibration': 120.41}
+2026-06-02 21:34:43,650 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:43,650 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:43,674 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:43 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:43,720 | INFO | industrial_safety_system | Sensor data | raw={'gas': 253.8, 'temperature': 36.86, 'vibration': 119.27} | processed={'gas': 276.63, 'temperature': 33.91, 'vibration': 123.09}
+2026-06-02 21:34:43,828 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:43,828 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:43,841 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:43 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:43,875 | INFO | industrial_safety_system | Sensor data | raw={'gas': 348.68, 'temperature': 30.58, 'vibration': 154.46} | processed={'gas': 305.4, 'temperature': 33.37, 'vibration': 129.92}
+2026-06-02 21:34:43,998 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:43,998 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:44,004 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:43 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:44,024 | INFO | industrial_safety_system | Sensor data | raw={'gas': 189.66, 'temperature': 37.75, 'vibration': 106.85} | processed={'gas': 273.22, 'temperature': 32.95, 'vibration': 121.82}
+2026-06-02 21:34:44,114 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:44,114 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:44,119 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:44 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:44,156 | INFO | industrial_safety_system | Sensor data | raw={'gas': 297.41, 'temperature': 35.36, 'vibration': 169.13} | processed={'gas': 282.92, 'temperature': 34.02, 'vibration': 126.03}
+2026-06-02 21:34:44,252 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:44,252 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:44,273 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:44 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:44,311 | INFO | industrial_safety_system | Sensor data | raw={'gas': 291.56, 'temperature': 39.21, 'vibration': 121.65} | processed={'gas': 276.22, 'temperature': 35.95, 'vibration': 134.27}
+2026-06-02 21:34:44,410 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:44,411 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:44,432 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:44 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:44,467 | INFO | industrial_safety_system | Sensor data | raw={'gas': 213.59, 'temperature': 30.1, 'vibration': 171.89} | processed={'gas': 268.18, 'temperature': 34.6, 'vibration': 144.8}
+2026-06-02 21:34:44,563 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:44,563 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:44,576 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:44 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:44,619 | INFO | industrial_safety_system | Sensor data | raw={'gas': 287.51, 'temperature': 38.72, 'vibration': 160.14} | processed={'gas': 255.95, 'temperature': 36.23, 'vibration': 145.93}
+2026-06-02 21:34:44,707 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:44,707 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:44,726 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:44 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:44,771 | INFO | industrial_safety_system | Sensor data | raw={'gas': 298.65, 'temperature': 33.06, 'vibration': 89.84} | processed={'gas': 277.74, 'temperature': 35.29, 'vibration': 142.53}
+2026-06-02 21:34:44,878 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:44,879 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:44,884 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:44 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:44,921 | INFO | industrial_safety_system | Sensor data | raw={'gas': 219.77, 'temperature': 36.18, 'vibration': 116.26} | processed={'gas': 262.22, 'temperature': 35.45, 'vibration': 131.96}
+2026-06-02 21:34:45,042 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:45,043 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:45,047 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:45 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:45,072 | INFO | industrial_safety_system | Sensor data | raw={'gas': 182.42, 'temperature': 30.08, 'vibration': 174.77} | processed={'gas': 240.39, 'temperature': 33.63, 'vibration': 142.58}
+2026-06-02 21:34:45,172 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:45,172 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:45,178 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:45 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:45,217 | INFO | industrial_safety_system | Sensor data | raw={'gas': 233.78, 'temperature': 38.27, 'vibration': 176.77} | processed={'gas': 244.43, 'temperature': 35.26, 'vibration': 143.56}
+2026-06-02 21:34:45,327 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:45,328 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:45,333 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:45 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:45,372 | INFO | industrial_safety_system | Sensor data | raw={'gas': 248.45, 'temperature': 31.09, 'vibration': 85.41} | processed={'gas': 236.61, 'temperature': 33.74, 'vibration': 128.61}
+2026-06-02 21:34:45,478 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:45,478 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:45,493 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:45 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:45,526 | INFO | industrial_safety_system | Sensor data | raw={'gas': 338.05, 'temperature': 29.28, 'vibration': 122.09} | processed={'gas': 244.49, 'temperature': 32.98, 'vibration': 135.06}
+2026-06-02 21:34:45,640 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:45,641 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:45,660 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:45 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:45,685 | INFO | industrial_safety_system | Sensor data | raw={'gas': 242.78, 'temperature': 30.43, 'vibration': 139.34} | processed={'gas': 249.1, 'temperature': 31.83, 'vibration': 139.68}
+2026-06-02 21:34:45,783 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:45,783 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:45,796 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:45 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:45,826 | INFO | industrial_safety_system | Sensor data | raw={'gas': 192.64, 'temperature': 37.93, 'vibration': 98.96} | processed={'gas': 251.14, 'temperature': 33.4, 'vibration': 124.51}
+2026-06-02 21:34:45,945 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:45,945 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:45,950 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:45 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:45,980 | INFO | industrial_safety_system | Sensor data | raw={'gas': 334.37, 'temperature': 29.43, 'vibration': 152.77} | processed={'gas': 271.26, 'temperature': 31.63, 'vibration': 119.71}
+2026-06-02 21:34:46,061 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:46,061 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:46,066 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:46 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:46,105 | INFO | industrial_safety_system | Sensor data | raw={'gas': 269.71, 'temperature': 32.09, 'vibration': 120.34} | processed={'gas': 275.51, 'temperature': 31.83, 'vibration': 126.7}
+2026-06-02 21:34:46,181 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:46,181 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:46,199 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:46 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:46,233 | INFO | industrial_safety_system | Sensor data | raw={'gas': 262.5, 'temperature': 33.82, 'vibration': 143.27} | processed={'gas': 260.4, 'temperature': 32.74, 'vibration': 130.94}
+2026-06-02 21:34:46,333 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:46,333 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:46,352 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:46 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:46,388 | INFO | industrial_safety_system | Sensor data | raw={'gas': 279.05, 'temperature': 38.29, 'vibration': 136.13} | processed={'gas': 267.65, 'temperature': 34.31, 'vibration': 130.29}
+2026-06-02 21:34:46,466 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:46,466 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:46,480 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:46 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:46,513 | INFO | industrial_safety_system | Sensor data | raw={'gas': 322.15, 'temperature': 39.46, 'vibration': 94.44} | processed={'gas': 293.56, 'temperature': 34.62, 'vibration': 129.39}
+2026-06-02 21:34:46,614 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:46,614 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:46,630 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:46 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:46,669 | INFO | industrial_safety_system | Sensor data | raw={'gas': 202.15, 'temperature': 35.88, 'vibration': 176.48} | processed={'gas': 267.11, 'temperature': 35.91, 'vibration': 134.13}
+2026-06-02 21:34:46,754 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:46,754 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:46,767 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:46 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:46,805 | INFO | industrial_safety_system | Sensor data | raw={'gas': 284.8, 'temperature': 32.38, 'vibration': 117.01} | processed={'gas': 270.13, 'temperature': 35.97, 'vibration': 133.47}
+2026-06-02 21:34:46,892 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:46,892 | INFO | industrial_safety_system | PPE detections count: 6
+2026-06-02 21:34:46,897 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:46 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:46,934 | INFO | industrial_safety_system | Sensor data | raw={'gas': 264.08, 'temperature': 31.48, 'vibration': 98.48} | processed={'gas': 270.45, 'temperature': 35.5, 'vibration': 124.51}
+2026-06-02 21:34:47,018 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:47,018 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:47,034 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:47 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:47,062 | INFO | industrial_safety_system | Sensor data | raw={'gas': 227.51, 'temperature': 34.83, 'vibration': 160.0} | processed={'gas': 260.14, 'temperature': 34.81, 'vibration': 129.28}
+2026-06-02 21:34:47,157 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:47,157 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:47,170 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:47 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:47,204 | INFO | industrial_safety_system | Sensor data | raw={'gas': 341.28, 'temperature': 37.78, 'vibration': 85.75} | processed={'gas': 263.96, 'temperature': 34.47, 'vibration': 127.54}
+2026-06-02 21:34:47,296 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:47,296 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:47,302 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:47 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:47,336 | INFO | industrial_safety_system | Sensor data | raw={'gas': 352.58, 'temperature': 28.32, 'vibration': 123.64} | processed={'gas': 294.05, 'temperature': 32.96, 'vibration': 116.98}
+2026-06-02 21:34:47,430 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:47,431 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:47,446 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:47 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:47,492 | INFO | industrial_safety_system | Sensor data | raw={'gas': 251.1, 'temperature': 37.17, 'vibration': 130.18} | processed={'gas': 287.31, 'temperature': 33.92, 'vibration': 119.61}
+2026-06-02 21:34:47,587 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:47,588 | INFO | industrial_safety_system | PPE detections count: 6
+2026-06-02 21:34:47,601 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:47 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:47,638 | INFO | industrial_safety_system | Sensor data | raw={'gas': 220.28, 'temperature': 38.77, 'vibration': 174.79} | processed={'gas': 278.55, 'temperature': 35.37, 'vibration': 134.87}
+2026-06-02 21:34:47,725 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:47,726 | INFO | industrial_safety_system | PPE detections count: 6
+2026-06-02 21:34:47,742 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:47 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:47,771 | INFO | industrial_safety_system | Sensor data | raw={'gas': 204.92, 'temperature': 29.97, 'vibration': 96.01} | processed={'gas': 274.03, 'temperature': 34.4, 'vibration': 122.07}
+2026-06-02 21:34:47,864 | INFO | industrial_safety_system | Inferred 2 missing-helmet detections from person boxes.
+2026-06-02 21:34:47,864 | INFO | industrial_safety_system | PPE detections count: 7
+2026-06-02 21:34:47,871 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:47 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:47,912 | INFO | industrial_safety_system | Sensor data | raw={'gas': 339.47, 'temperature': 29.67, 'vibration': 91.62} | processed={'gas': 273.67, 'temperature': 32.78, 'vibration': 123.25}
+2026-06-02 21:34:48,021 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:48,022 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:48,026 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:48 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:48,054 | INFO | industrial_safety_system | Sensor data | raw={'gas': 323.35, 'temperature': 30.05, 'vibration': 92.36} | processed={'gas': 267.82, 'temperature': 33.13, 'vibration': 116.99}
+2026-06-02 21:34:48,145 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:48,145 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:48,158 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:48 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:48,194 | INFO | industrial_safety_system | Sensor data | raw={'gas': 197.9, 'temperature': 32.17, 'vibration': 140.65} | processed={'gas': 257.18, 'temperature': 32.13, 'vibration': 119.09}
+2026-06-02 21:34:48,276 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:48,276 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:48,280 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:48 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:48,318 | INFO | industrial_safety_system | Sensor data | raw={'gas': 247.14, 'temperature': 35.64, 'vibration': 162.56} | processed={'gas': 262.56, 'temperature': 31.5, 'vibration': 116.64}
+2026-06-02 21:34:48,416 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:48,417 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:48,429 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:48 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:48,474 | INFO | industrial_safety_system | Sensor data | raw={'gas': 312.83, 'temperature': 28.84, 'vibration': 98.2} | processed={'gas': 284.14, 'temperature': 31.27, 'vibration': 117.08}
+2026-06-02 21:34:48,570 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:48,571 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:48,593 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:48 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:48,629 | INFO | industrial_safety_system | Sensor data | raw={'gas': 297.47, 'temperature': 66.62, 'vibration': 92.9} | processed={'gas': 275.74, 'temperature': 38.66, 'vibration': 117.33}
+2026-06-02 21:34:48,712 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:48,712 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:48,717 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:48 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:48,740 | INFO | industrial_safety_system | Sensor data | raw={'gas': 230.63, 'temperature': 38.48, 'vibration': 173.7} | processed={'gas': 257.19, 'temperature': 40.35, 'vibration': 133.6}
+2026-06-02 21:34:48,822 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:48,822 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:48,835 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:48 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:48,882 | INFO | industrial_safety_system | Sensor data | raw={'gas': 349.82, 'temperature': 36.81, 'vibration': 95.3} | processed={'gas': 287.58, 'temperature': 41.28, 'vibration': 124.53}
+2026-06-02 21:34:48,968 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:48,968 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:48,973 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:48 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:49,007 | INFO | industrial_safety_system | Sensor data | raw={'gas': 320.88, 'temperature': 30.9, 'vibration': 129.14} | processed={'gas': 302.33, 'temperature': 40.33, 'vibration': 117.85}
+2026-06-02 21:34:49,098 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:49,099 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:49,104 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:49 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:49,137 | INFO | industrial_safety_system | Sensor data | raw={'gas': 338.61, 'temperature': 31.12, 'vibration': 137.06} | processed={'gas': 307.48, 'temperature': 40.79, 'vibration': 125.62}
+2026-06-02 21:34:49,219 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:49,220 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:49,233 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:49 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:49,258 | INFO | industrial_safety_system | Sensor data | raw={'gas': 337.21, 'temperature': 32.17, 'vibration': 105.41} | processed={'gas': 315.43, 'temperature': 33.9, 'vibration': 128.12}
+2026-06-02 21:34:49,344 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:49,345 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:49,363 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:49 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:49,398 | INFO | industrial_safety_system | Sensor data | raw={'gas': 345.74, 'temperature': 38.98, 'vibration': 137.63} | processed={'gas': 338.45, 'temperature': 34.0, 'vibration': 120.91}
+2026-06-02 21:34:49,482 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:49,483 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:49,497 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:49 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:49,537 | INFO | industrial_safety_system | Sensor data | raw={'gas': 302.52, 'temperature': 30.5, 'vibration': 162.05} | processed={'gas': 328.99, 'temperature': 32.73, 'vibration': 134.26}
+2026-06-02 21:34:49,630 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:49,630 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:49,635 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:49 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:49,666 | INFO | industrial_safety_system | Sensor data | raw={'gas': 308.5, 'temperature': 34.52, 'vibration': 160.21} | processed={'gas': 326.52, 'temperature': 33.46, 'vibration': 140.47}
+2026-06-02 21:34:49,767 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:49,768 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:49,773 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:49 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:49,807 | INFO | industrial_safety_system | Sensor data | raw={'gas': 306.27, 'temperature': 38.68, 'vibration': 85.13} | processed={'gas': 320.05, 'temperature': 34.97, 'vibration': 130.09}
+2026-06-02 21:34:49,885 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:49,885 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:49,895 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:49 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:49,933 | INFO | industrial_safety_system | Sensor data | raw={'gas': 228.24, 'temperature': 35.43, 'vibration': 171.75} | processed={'gas': 298.25, 'temperature': 35.62, 'vibration': 143.35}
+2026-06-02 21:34:50,026 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:50,027 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:50,032 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:50 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:50,057 | INFO | industrial_safety_system | Sensor data | raw={'gas': 304.77, 'temperature': 28.58, 'vibration': 99.83} | processed={'gas': 290.06, 'temperature': 33.54, 'vibration': 135.79}
+2026-06-02 21:34:50,147 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:50,147 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:50,163 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:50 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:50,192 | INFO | industrial_safety_system | Sensor data | raw={'gas': 268.27, 'temperature': 29.93, 'vibration': 85.94} | processed={'gas': 283.21, 'temperature': 33.43, 'vibration': 120.57}
+2026-06-02 21:34:50,279 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:50,279 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:50,285 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:50 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:50,315 | INFO | industrial_safety_system | Sensor data | raw={'gas': 311.38, 'temperature': 35.46, 'vibration': 81.09} | processed={'gas': 283.79, 'temperature': 33.62, 'vibration': 104.75}
+2026-06-02 21:34:50,409 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:50,409 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:50,414 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:50 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:50,450 | INFO | industrial_safety_system | Sensor data | raw={'gas': 261.2, 'temperature': 32.89, 'vibration': 151.02} | processed={'gas': 274.77, 'temperature': 32.46, 'vibration': 117.93}
+2026-06-02 21:34:50,547 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:50,548 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:50,564 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:50 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:50,597 | INFO | industrial_safety_system | Sensor data | raw={'gas': 294.56, 'temperature': 36.09, 'vibration': 157.29} | processed={'gas': 288.04, 'temperature': 32.59, 'vibration': 115.03}
+2026-06-02 21:34:50,707 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:50,707 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:50,713 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:50 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:50,743 | INFO | industrial_safety_system | Sensor data | raw={'gas': 272.2, 'temperature': 37.53, 'vibration': 113.46} | processed={'gas': 281.52, 'temperature': 34.38, 'vibration': 117.76}
+2026-06-02 21:34:50,847 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:50,848 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:50,853 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:50 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:50,887 | INFO | industrial_safety_system | Sensor data | raw={'gas': 261.13, 'temperature': 29.01, 'vibration': 156.25} | processed={'gas': 280.09, 'temperature': 34.2, 'vibration': 131.82}
+2026-06-02 21:34:50,984 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:50,984 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:50,989 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:50 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:51,021 | INFO | industrial_safety_system | Sensor data | raw={'gas': 235.13, 'temperature': 28.0, 'vibration': 174.11} | processed={'gas': 264.84, 'temperature': 32.7, 'vibration': 150.43}
+2026-06-02 21:34:51,130 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:51,130 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:51,135 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:51 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:51,169 | INFO | industrial_safety_system | Sensor data | raw={'gas': 321.59, 'temperature': 38.73, 'vibration': 113.52} | processed={'gas': 276.92, 'temperature': 33.87, 'vibration': 142.93}
+2026-06-02 21:34:51,258 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:51,259 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:51,264 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:51 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:51,292 | INFO | industrial_safety_system | Sensor data | raw={'gas': 256.16, 'temperature': 28.09, 'vibration': 127.71} | processed={'gas': 269.24, 'temperature': 32.27, 'vibration': 137.01}
+2026-06-02 21:34:51,385 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:51,386 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:51,390 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:51 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:51,416 | INFO | industrial_safety_system | Sensor data | raw={'gas': 332.28, 'temperature': 34.15, 'vibration': 119.21} | processed={'gas': 281.26, 'temperature': 31.6, 'vibration': 138.16}
+2026-06-02 21:34:51,516 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:51,516 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:51,520 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:51 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:51,544 | INFO | industrial_safety_system | Sensor data | raw={'gas': 186.0, 'temperature': 36.69, 'vibration': 143.38} | processed={'gas': 266.23, 'temperature': 33.13, 'vibration': 135.59}
+2026-06-02 21:34:51,629 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:51,631 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:51,635 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:51 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:51,667 | INFO | industrial_safety_system | Sensor data | raw={'gas': 355.98, 'temperature': 28.19, 'vibration': 90.12} | processed={'gas': 290.4, 'temperature': 33.17, 'vibration': 118.79}
+2026-06-02 21:34:51,756 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:51,756 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:51,774 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:51 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:51,813 | INFO | industrial_safety_system | Sensor data | raw={'gas': 328.06, 'temperature': 36.74, 'vibration': 95.35} | processed={'gas': 291.7, 'temperature': 32.77, 'vibration': 115.15}
+2026-06-02 21:34:51,902 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:51,903 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:51,909 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:51 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:51,934 | INFO | industrial_safety_system | Sensor data | raw={'gas': 276.3, 'temperature': 38.89, 'vibration': 112.65} | processed={'gas': 295.72, 'temperature': 34.93, 'vibration': 112.14}
+2026-06-02 21:34:52,020 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:52,021 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:52,027 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:52 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:52,057 | INFO | industrial_safety_system | Sensor data | raw={'gas': 310.03, 'temperature': 36.49, 'vibration': 120.5} | processed={'gas': 291.27, 'temperature': 35.4, 'vibration': 112.4}
+2026-06-02 21:34:52,147 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:52,148 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:52,165 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:52 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:52,203 | INFO | industrial_safety_system | Sensor data | raw={'gas': 225.81, 'temperature': 35.85, 'vibration': 103.39} | processed={'gas': 299.24, 'temperature': 35.23, 'vibration': 104.4}
+2026-06-02 21:34:52,292 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:52,293 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:52,298 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:52 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:52,339 | INFO | industrial_safety_system | Sensor data | raw={'gas': 281.26, 'temperature': 31.84, 'vibration': 121.55} | processed={'gas': 284.29, 'temperature': 35.96, 'vibration': 110.69}
+2026-06-02 21:34:52,431 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:52,431 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:52,437 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:52 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:52,464 | INFO | industrial_safety_system | Sensor data | raw={'gas': 345.36, 'temperature': 28.71, 'vibration': 170.16} | processed={'gas': 287.75, 'temperature': 34.36, 'vibration': 125.65}
+2026-06-02 21:34:52,543 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:52,544 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:52,562 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:52 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:52,597 | INFO | industrial_safety_system | Sensor data | raw={'gas': 349.76, 'temperature': 37.79, 'vibration': 100.13} | processed={'gas': 302.44, 'temperature': 34.14, 'vibration': 123.15}
+2026-06-02 21:34:52,684 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:52,684 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:52,690 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:52 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:52,782 | INFO | industrial_safety_system | Sensor data | raw={'gas': 238.1, 'temperature': 30.95, 'vibration': 129.96} | processed={'gas': 288.06, 'temperature': 33.03, 'vibration': 125.04}
+2026-06-02 21:34:52,867 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:52,868 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:52,875 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:52 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:52,907 | INFO | industrial_safety_system | Sensor data | raw={'gas': 240.05, 'temperature': 39.06, 'vibration': 161.67} | processed={'gas': 290.91, 'temperature': 33.67, 'vibration': 136.69}
+2026-06-02 21:34:53,001 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:53,002 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:53,006 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:53 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:53,027 | INFO | industrial_safety_system | Sensor data | raw={'gas': 229.38, 'temperature': 31.8, 'vibration': 135.63} | processed={'gas': 280.53, 'temperature': 33.66, 'vibration': 139.51}
+2026-06-02 21:34:53,117 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:53,118 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:53,125 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:53 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:53,154 | INFO | industrial_safety_system | Sensor data | raw={'gas': 185.43, 'temperature': 31.57, 'vibration': 119.66} | processed={'gas': 248.54, 'temperature': 34.23, 'vibration': 129.41}
+2026-06-02 21:34:53,236 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:53,236 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:53,241 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:53 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:53,265 | INFO | industrial_safety_system | Sensor data | raw={'gas': 204.62, 'temperature': 32.86, 'vibration': 142.75} | processed={'gas': 219.52, 'temperature': 33.25, 'vibration': 137.93}
+2026-06-02 21:34:53,363 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:53,363 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:53,371 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:53 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:53,402 | INFO | industrial_safety_system | Sensor data | raw={'gas': 298.02, 'temperature': 33.57, 'vibration': 95.48} | processed={'gas': 231.5, 'temperature': 33.77, 'vibration': 131.04}
+2026-06-02 21:34:53,492 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:53,492 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:53,496 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:53 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:53,528 | INFO | industrial_safety_system | Sensor data | raw={'gas': 190.06, 'temperature': 34.71, 'vibration': 106.27} | processed={'gas': 221.5, 'temperature': 32.9, 'vibration': 119.96}
+2026-06-02 21:34:53,615 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:53,615 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:53,623 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:53 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:53,646 | INFO | industrial_safety_system | Sensor data | raw={'gas': 229.08, 'temperature': 30.01, 'vibration': 98.18} | processed={'gas': 221.44, 'temperature': 32.54, 'vibration': 112.47}
+2026-06-02 21:34:53,730 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:53,731 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:53,752 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:53 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:53,786 | INFO | industrial_safety_system | Sensor data | raw={'gas': 199.54, 'temperature': 34.57, 'vibration': 116.07} | processed={'gas': 224.26, 'temperature': 33.14, 'vibration': 111.75}
+2026-06-02 21:34:53,878 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:53,878 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:53,882 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:53 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:53,909 | INFO | industrial_safety_system | Sensor data | raw={'gas': 281.97, 'temperature': 32.44, 'vibration': 122.86} | processed={'gas': 239.73, 'temperature': 33.06, 'vibration': 107.77}
+2026-06-02 21:34:54,000 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:54,000 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:54,004 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:54 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:54,025 | INFO | industrial_safety_system | Sensor data | raw={'gas': 321.25, 'temperature': 39.27, 'vibration': 148.28} | processed={'gas': 244.38, 'temperature': 34.2, 'vibration': 118.33}
+2026-06-02 21:34:54,128 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:54,128 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:54,134 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:54 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:54,168 | INFO | industrial_safety_system | Sensor data | raw={'gas': 300.18, 'temperature': 29.05, 'vibration': 120.83} | processed={'gas': 266.4, 'temperature': 33.07, 'vibration': 121.24}
+2026-06-02 21:34:54,259 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:54,260 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:54,264 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:54 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:54,294 | INFO | industrial_safety_system | Sensor data | raw={'gas': 182.28, 'temperature': 28.82, 'vibration': 105.75} | processed={'gas': 257.04, 'temperature': 32.83, 'vibration': 122.76}
+2026-06-02 21:34:54,389 | INFO | industrial_safety_system | PPE detections count: 1
+2026-06-02 21:34:54,390 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:54,390 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:54,394 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:54 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:54,420 | INFO | industrial_safety_system | Sensor data | raw={'gas': 287.06, 'temperature': 33.37, 'vibration': 164.7} | processed={'gas': 274.55, 'temperature': 32.59, 'vibration': 132.48}
+2026-06-02 21:34:54,493 | INFO | industrial_safety_system | PPE detections count: 1
+2026-06-02 21:34:54,513 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:54 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:54,562 | INFO | industrial_safety_system | Sensor data | raw={'gas': 315.08, 'temperature': 35.17, 'vibration': 111.42} | processed={'gas': 281.17, 'temperature': 33.14, 'vibration': 130.2}
+2026-06-02 21:34:54,680 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:54,685 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:54 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:54,717 | INFO | industrial_safety_system | Sensor data | raw={'gas': 312.1, 'temperature': 33.23, 'vibration': 121.83} | processed={'gas': 279.34, 'temperature': 31.93, 'vibration': 124.91}
+2026-06-02 21:34:54,805 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:54,805 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:54,806 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:54,806 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:54,812 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:54 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:54,839 | INFO | industrial_safety_system | Sensor data | raw={'gas': 268.61, 'temperature': 35.15, 'vibration': 88.03} | processed={'gas': 273.03, 'temperature': 33.15, 'vibration': 118.35}
+2026-06-02 21:34:54,926 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:54,926 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:54,940 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:54 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:54,982 | INFO | industrial_safety_system | Sensor data | raw={'gas': 321.78, 'temperature': 29.59, 'vibration': 144.7} | processed={'gas': 300.93, 'temperature': 33.3, 'vibration': 126.14}
+2026-06-02 21:34:55,072 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:55,073 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:55,089 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:55 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:55,141 | INFO | industrial_safety_system | Sensor data | raw={'gas': 326.86, 'temperature': 38.9, 'vibration': 141.59} | processed={'gas': 308.89, 'temperature': 34.41, 'vibration': 121.51}
+2026-06-02 21:34:55,245 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:55,249 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:55,249 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:55,256 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:55 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:55,297 | INFO | industrial_safety_system | Sensor data | raw={'gas': 286.16, 'temperature': 34.03, 'vibration': 88.87} | processed={'gas': 303.1, 'temperature': 34.18, 'vibration': 117.0}
+2026-06-02 21:34:55,378 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:55,382 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:55 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:55,408 | INFO | industrial_safety_system | Sensor data | raw={'gas': 197.87, 'temperature': 34.58, 'vibration': 143.29} | processed={'gas': 280.26, 'temperature': 34.45, 'vibration': 121.3}
+2026-06-02 21:34:55,506 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:55,510 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:55 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:55,534 | INFO | industrial_safety_system | Sensor data | raw={'gas': 230.03, 'temperature': 34.88, 'vibration': 98.04} | processed={'gas': 272.54, 'temperature': 34.4, 'vibration': 123.3}
+2026-06-02 21:34:55,630 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:55,630 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:55,630 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:55,630 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:55,634 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:55 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:55,655 | INFO | industrial_safety_system | Sensor data | raw={'gas': 202.8, 'temperature': 38.62, 'vibration': 119.16} | processed={'gas': 248.74, 'temperature': 36.2, 'vibration': 118.19}
+2026-06-02 21:34:55,745 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:55,745 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:55,746 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:55,750 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:55 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:55,773 | INFO | industrial_safety_system | Sensor data | raw={'gas': 318.77, 'temperature': 39.07, 'vibration': 89.21} | processed={'gas': 247.13, 'temperature': 36.24, 'vibration': 107.71}
+2026-06-02 21:34:55,859 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:55,863 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:55 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:55,892 | INFO | industrial_safety_system | Sensor data | raw={'gas': 268.89, 'temperature': 32.33, 'vibration': 106.55} | processed={'gas': 243.67, 'temperature': 35.9, 'vibration': 111.25}
+2026-06-02 21:34:55,978 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:55,982 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:55 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:56,001 | INFO | industrial_safety_system | Sensor data | raw={'gas': 180.81, 'temperature': 34.25, 'vibration': 97.12} | processed={'gas': 240.26, 'temperature': 35.83, 'vibration': 102.02}
+2026-06-02 21:34:56,088 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:56,092 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:56 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:56,126 | INFO | industrial_safety_system | Sensor data | raw={'gas': 276.83, 'temperature': 28.98, 'vibration': 153.79} | processed={'gas': 249.62, 'temperature': 34.65, 'vibration': 113.17}
+2026-06-02 21:34:56,196 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:56,209 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:56 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:56,242 | INFO | industrial_safety_system | Sensor data | raw={'gas': 256.0, 'temperature': 36.18, 'vibration': 124.69} | processed={'gas': 260.26, 'temperature': 34.16, 'vibration': 114.27}
+2026-06-02 21:34:56,340 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:56,359 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:56 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:56,398 | INFO | industrial_safety_system | Sensor data | raw={'gas': 210.95, 'temperature': 39.21, 'vibration': 129.64} | processed={'gas': 238.7, 'temperature': 34.19, 'vibration': 122.36}
+2026-06-02 21:34:56,498 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:56,509 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:56 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:56,536 | INFO | industrial_safety_system | Sensor data | raw={'gas': 350.32, 'temperature': 32.47, 'vibration': 149.49} | processed={'gas': 254.98, 'temperature': 34.22, 'vibration': 130.95}
+2026-06-02 21:34:56,623 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:56,628 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:56 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:56,654 | INFO | industrial_safety_system | Sensor data | raw={'gas': 347.99, 'temperature': 36.8, 'vibration': 152.67} | processed={'gas': 288.42, 'temperature': 34.73, 'vibration': 142.06}
+2026-06-02 21:34:56,746 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:56,765 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:56 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:56,798 | INFO | industrial_safety_system | Sensor data | raw={'gas': 197.34, 'temperature': 38.0, 'vibration': 119.97} | processed={'gas': 272.52, 'temperature': 36.53, 'vibration': 135.29}
+2026-06-02 21:34:56,885 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:56,890 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:56 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:56,924 | INFO | industrial_safety_system | Sensor data | raw={'gas': 240.52, 'temperature': 28.8, 'vibration': 91.91} | processed={'gas': 269.42, 'temperature': 35.06, 'vibration': 128.74}
+2026-06-02 21:34:57,028 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:57,032 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:57 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:57,060 | INFO | industrial_safety_system | Sensor data | raw={'gas': 353.89, 'temperature': 32.2, 'vibration': 152.73} | processed={'gas': 298.01, 'temperature': 33.65, 'vibration': 133.35}
+2026-06-02 21:34:57,153 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:57,160 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:57 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:57,185 | INFO | industrial_safety_system | Sensor data | raw={'gas': 296.61, 'temperature': 34.11, 'vibration': 99.06} | processed={'gas': 287.27, 'temperature': 33.98, 'vibration': 123.27}
+2026-06-02 21:34:57,276 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:57,290 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:57 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:57,331 | INFO | industrial_safety_system | Sensor data | raw={'gas': 318.45, 'temperature': 37.17, 'vibration': 177.43} | processed={'gas': 281.36, 'temperature': 34.06, 'vibration': 128.22}
+2026-06-02 21:34:57,418 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:57,424 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:57 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:57,457 | INFO | industrial_safety_system | Sensor data | raw={'gas': 333.63, 'temperature': 29.19, 'vibration': 125.53} | processed={'gas': 308.62, 'temperature': 32.29, 'vibration': 129.33}
+2026-06-02 21:34:57,538 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:57,538 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:57,539 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:57,539 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:57,553 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:57 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:57,572 | INFO | industrial_safety_system | Sensor data | raw={'gas': 254.29, 'temperature': 37.27, 'vibration': 146.24} | processed={'gas': 311.37, 'temperature': 33.99, 'vibration': 140.2}
+2026-06-02 21:34:57,656 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:57,656 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:57,661 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:57 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:57,690 | INFO | industrial_safety_system | Sensor data | raw={'gas': 327.99, 'temperature': 36.7, 'vibration': 166.05} | processed={'gas': 306.19, 'temperature': 34.89, 'vibration': 142.86}
+2026-06-02 21:34:57,770 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:57,772 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:57,777 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:57 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:57,797 | INFO | industrial_safety_system | Sensor data | raw={'gas': 333.67, 'temperature': 29.83, 'vibration': 159.62} | processed={'gas': 313.61, 'temperature': 34.03, 'vibration': 154.97}
+2026-06-02 21:34:57,881 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:57,881 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:57,886 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:57 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:57,923 | INFO | industrial_safety_system | Sensor data | raw={'gas': 283.46, 'temperature': 39.62, 'vibration': 134.72} | processed={'gas': 306.61, 'temperature': 34.52, 'vibration': 146.43}
+2026-06-02 21:34:58,009 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:58,009 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:58,024 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:58 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:58,064 | INFO | industrial_safety_system | Sensor data | raw={'gas': 324.69, 'temperature': 30.28, 'vibration': 97.74} | processed={'gas': 304.82, 'temperature': 34.74, 'vibration': 140.87}
+2026-06-02 21:34:58,160 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:58,161 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:58,167 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:58 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:58,197 | INFO | industrial_safety_system | Sensor data | raw={'gas': 272.19, 'temperature': 28.81, 'vibration': 124.83} | processed={'gas': 308.4, 'temperature': 33.05, 'vibration': 136.59}
+2026-06-02 21:34:58,287 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:58,287 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:58,292 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:58 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:58,327 | INFO | industrial_safety_system | Sensor data | raw={'gas': 203.97, 'temperature': 37.8, 'vibration': 91.39} | processed={'gas': 283.6, 'temperature': 33.27, 'vibration': 121.66}
+2026-06-02 21:34:58,422 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:58,422 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:34:58,426 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:58 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:58,453 | INFO | industrial_safety_system | Sensor data | raw={'gas': 315.56, 'temperature': 36.06, 'vibration': 175.03} | processed={'gas': 279.97, 'temperature': 34.51, 'vibration': 124.74}
+2026-06-02 21:34:58,536 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:58,536 | INFO | industrial_safety_system | PPE detections count: 6
+2026-06-02 21:34:58,549 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:58 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:58,594 | INFO | industrial_safety_system | Sensor data | raw={'gas': 348.56, 'temperature': 30.58, 'vibration': 92.74} | processed={'gas': 292.99, 'temperature': 32.71, 'vibration': 116.35}
+2026-06-02 21:34:58,680 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:58,681 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:58,685 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:58 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:58,720 | INFO | industrial_safety_system | Sensor data | raw={'gas': 313.56, 'temperature': 29.43, 'vibration': 164.74} | processed={'gas': 290.77, 'temperature': 32.54, 'vibration': 129.75}
+2026-06-02 21:34:58,811 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:34:58,811 | INFO | industrial_safety_system | PPE detections count: 6
+2026-06-02 21:34:58,833 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:58 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:34:58,862 | INFO | industrial_safety_system | Sensor data | raw={'gas': 291.35, 'temperature': 30.17, 'vibration': 130.72} | processed={'gas': 294.6, 'temperature': 32.81, 'vibration': 130.92}
+2026-06-02 21:34:58,954 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:58,954 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:34:58,955 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:58,959 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:58 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:58,992 | INFO | industrial_safety_system | Sensor data | raw={'gas': 181.99, 'temperature': 39.77, 'vibration': 139.27} | processed={'gas': 290.2, 'temperature': 33.2, 'vibration': 140.5}
+2026-06-02 21:34:59,078 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:59,096 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:59 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:59,126 | INFO | industrial_safety_system | Sensor data | raw={'gas': 298.2, 'temperature': 32.63, 'vibration': 157.76} | processed={'gas': 286.73, 'temperature': 32.52, 'vibration': 137.05}
+2026-06-02 21:34:59,208 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:59,213 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:59 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:59,249 | INFO | industrial_safety_system | Sensor data | raw={'gas': 215.69, 'temperature': 32.41, 'vibration': 97.32} | processed={'gas': 260.16, 'temperature': 32.88, 'vibration': 137.96}
+2026-06-02 21:34:59,342 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:34:59,359 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:59 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:59,382 | INFO | industrial_safety_system | Sensor data | raw={'gas': 347.13, 'temperature': 37.42, 'vibration': 102.83} | processed={'gas': 266.87, 'temperature': 34.48, 'vibration': 125.58}
+2026-06-02 21:34:59,468 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:59,472 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:59 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:59,498 | INFO | industrial_safety_system | Sensor data | raw={'gas': 235.28, 'temperature': 39.3, 'vibration': 174.1} | processed={'gas': 255.66, 'temperature': 36.31, 'vibration': 134.26}
+2026-06-02 21:34:59,583 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:59,601 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:59 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:59,633 | INFO | industrial_safety_system | Sensor data | raw={'gas': 244.38, 'temperature': 29.3, 'vibration': 113.45} | processed={'gas': 268.14, 'temperature': 34.21, 'vibration': 129.09}
+2026-06-02 21:34:59,728 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:34:59,748 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:59 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:59,788 | INFO | industrial_safety_system | Sensor data | raw={'gas': 354.98, 'temperature': 29.59, 'vibration': 104.37} | processed={'gas': 279.49, 'temperature': 33.6, 'vibration': 118.41}
+2026-06-02 21:34:59,893 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:34:59,914 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:34:59 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:34:59,946 | INFO | industrial_safety_system | Sensor data | raw={'gas': 302.65, 'temperature': 35.82, 'vibration': 91.21} | processed={'gas': 296.88, 'temperature': 34.29, 'vibration': 117.19}
+2026-06-02 21:35:00,044 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:00,067 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:00 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:00,103 | INFO | industrial_safety_system | Sensor data | raw={'gas': 202.46, 'temperature': 30.99, 'vibration': 179.01} | processed={'gas': 267.95, 'temperature': 33.0, 'vibration': 132.43}
+2026-06-02 21:35:00,194 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:00,200 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:00 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:00,227 | INFO | industrial_safety_system | Sensor data | raw={'gas': 295.53, 'temperature': 34.07, 'vibration': 107.96} | processed={'gas': 280.0, 'temperature': 31.95, 'vibration': 119.2}
+2026-06-02 21:35:00,310 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:00,329 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:00 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:00,359 | INFO | industrial_safety_system | Sensor data | raw={'gas': 309.3, 'temperature': 35.71, 'vibration': 110.1} | processed={'gas': 292.98, 'temperature': 33.24, 'vibration': 118.53}
+2026-06-02 21:35:00,452 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:00,467 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:00 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:00,502 | INFO | industrial_safety_system | Sensor data | raw={'gas': 273.66, 'temperature': 28.51, 'vibration': 151.32} | processed={'gas': 276.72, 'temperature': 33.02, 'vibration': 127.92}
+2026-06-02 21:35:00,591 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:00,597 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:00 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:00,642 | INFO | industrial_safety_system | Sensor data | raw={'gas': 300.1, 'temperature': 38.86, 'vibration': 179.44} | processed={'gas': 276.21, 'temperature': 33.63, 'vibration': 145.57}
+2026-06-02 21:35:00,736 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:00,753 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:00 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:00,787 | INFO | industrial_safety_system | Sensor data | raw={'gas': 266.68, 'temperature': 30.97, 'vibration': 128.61} | processed={'gas': 289.05, 'temperature': 33.62, 'vibration': 135.49}
+2026-06-02 21:35:00,888 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:00,894 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:00 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:00,928 | INFO | industrial_safety_system | Sensor data | raw={'gas': 523.85, 'temperature': 38.15, 'vibration': 132.85} | processed={'gas': 334.72, 'temperature': 34.44, 'vibration': 140.46}
+2026-06-02 21:35:01,011 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:01,012 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:01,012 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Combined multimodal anomaly score is very high
+2026-06-02 21:35:01,016 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:01 | HIGH_RISK | Combined multimodal anomaly score is very high
+2026-06-02 21:35:01,040 | INFO | industrial_safety_system | Sensor data | raw={'gas': 211.28, 'temperature': 29.54, 'vibration': 146.31} | processed={'gas': 315.11, 'temperature': 33.21, 'vibration': 147.71}
+2026-06-02 21:35:01,120 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:01,122 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:01,122 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:01,127 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:01 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:01,153 | INFO | industrial_safety_system | Sensor data | raw={'gas': 285.4, 'temperature': 33.14, 'vibration': 159.08} | processed={'gas': 317.46, 'temperature': 34.13, 'vibration': 149.26}
+2026-06-02 21:35:01,245 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:01,260 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:01 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:01,311 | INFO | industrial_safety_system | Sensor data | raw={'gas': 321.47, 'temperature': 34.98, 'vibration': 132.97} | processed={'gas': 321.74, 'temperature': 33.36, 'vibration': 139.96}
+2026-06-02 21:35:01,412 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:01,413 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:01,413 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:01,413 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:01,432 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:01 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:01,460 | INFO | industrial_safety_system | Sensor data | raw={'gas': 224.1, 'temperature': 37.87, 'vibration': 132.37} | processed={'gas': 313.22, 'temperature': 34.74, 'vibration': 140.72}
+2026-06-02 21:35:01,548 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:01,549 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:01,554 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:01 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:01,581 | INFO | industrial_safety_system | Sensor data | raw={'gas': 348.74, 'temperature': 39.92, 'vibration': 123.07} | processed={'gas': 278.2, 'temperature': 35.09, 'vibration': 138.76}
+2026-06-02 21:35:01,686 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:01,686 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:01,692 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:01 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:01,720 | INFO | industrial_safety_system | Sensor data | raw={'gas': 319.98, 'temperature': 37.45, 'vibration': 172.03} | processed={'gas': 299.94, 'temperature': 36.67, 'vibration': 143.9}
+2026-06-02 21:35:01,808 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:01,808 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:01,823 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:01 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:01,856 | INFO | industrial_safety_system | Sensor data | raw={'gas': 307.83, 'temperature': 31.12, 'vibration': 140.91} | processed={'gas': 304.42, 'temperature': 36.27, 'vibration': 140.27}
+2026-06-02 21:35:01,949 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:01,950 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:01,965 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:01 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:01,991 | INFO | industrial_safety_system | Sensor data | raw={'gas': 351.99, 'temperature': 34.59, 'vibration': 85.98} | processed={'gas': 310.53, 'temperature': 36.19, 'vibration': 130.87}
+2026-06-02 21:35:02,087 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:02,088 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:02,108 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:02 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:02,126 | INFO | industrial_safety_system | Sensor data | raw={'gas': 196.71, 'temperature': 38.99, 'vibration': 81.64} | processed={'gas': 305.05, 'temperature': 36.41, 'vibration': 120.73}
+2026-06-02 21:35:02,210 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:02,210 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:02,216 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:02 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:02,252 | INFO | industrial_safety_system | Sensor data | raw={'gas': 229.23, 'temperature': 33.99, 'vibration': 155.4} | processed={'gas': 281.15, 'temperature': 35.23, 'vibration': 127.19}
+2026-06-02 21:35:02,345 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:02,346 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:02,362 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:02 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:02,395 | INFO | industrial_safety_system | Sensor data | raw={'gas': 217.92, 'temperature': 39.05, 'vibration': 119.84} | processed={'gas': 260.74, 'temperature': 35.55, 'vibration': 116.75}
+2026-06-02 21:35:02,490 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:02,490 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:02,496 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:02 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:02,537 | INFO | industrial_safety_system | Sensor data | raw={'gas': 317.92, 'temperature': 38.77, 'vibration': 171.85} | processed={'gas': 262.75, 'temperature': 37.08, 'vibration': 122.94}
+2026-06-02 21:35:02,626 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:02,626 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:02,627 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:02,633 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:02 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:02,662 | INFO | industrial_safety_system | Sensor data | raw={'gas': 352.97, 'temperature': 39.07, 'vibration': 149.35} | processed={'gas': 262.95, 'temperature': 37.97, 'vibration': 135.62}
+2026-06-02 21:35:02,760 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:02,765 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:02 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:02,785 | INFO | industrial_safety_system | Sensor data | raw={'gas': 333.97, 'temperature': 31.69, 'vibration': 176.94} | processed={'gas': 290.4, 'temperature': 36.51, 'vibration': 154.68}
+2026-06-02 21:35:02,880 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:02,880 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:02,880 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:02,880 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:02,893 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:02 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:02,933 | INFO | industrial_safety_system | Sensor data | raw={'gas': 277.59, 'temperature': 32.53, 'vibration': 166.6} | processed={'gas': 300.07, 'temperature': 36.22, 'vibration': 156.92}
+2026-06-02 21:35:03,031 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:03,032 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:03,032 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:03,037 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:03 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:03,068 | INFO | industrial_safety_system | Sensor data | raw={'gas': 183.73, 'temperature': 29.21, 'vibration': 132.71} | processed={'gas': 293.24, 'temperature': 34.25, 'vibration': 159.49}
+2026-06-02 21:35:03,154 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:03,159 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:03 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:03,207 | INFO | industrial_safety_system | Sensor data | raw={'gas': 237.64, 'temperature': 36.52, 'vibration': 109.78} | processed={'gas': 277.18, 'temperature': 33.8, 'vibration': 147.08}
+2026-06-02 21:35:03,296 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:03,296 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:03,297 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:03,297 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:03,300 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:03 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:03,329 | INFO | industrial_safety_system | Sensor data | raw={'gas': 273.64, 'temperature': 32.43, 'vibration': 140.45} | processed={'gas': 261.31, 'temperature': 32.48, 'vibration': 145.3}
+2026-06-02 21:35:03,415 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:03,415 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:03,428 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:03 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:03,455 | INFO | industrial_safety_system | Sensor data | raw={'gas': 227.22, 'temperature': 39.02, 'vibration': 88.48} | processed={'gas': 239.96, 'temperature': 33.94, 'vibration': 127.6}
+2026-06-02 21:35:03,532 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:03,533 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:03,546 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:03 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:03,579 | INFO | industrial_safety_system | Sensor data | raw={'gas': 215.7, 'temperature': 31.62, 'vibration': 151.61} | processed={'gas': 227.59, 'temperature': 33.76, 'vibration': 124.61}
+2026-06-02 21:35:03,671 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:03,671 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:03,683 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:03 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:03,720 | INFO | industrial_safety_system | Sensor data | raw={'gas': 221.59, 'temperature': 29.37, 'vibration': 99.79} | processed={'gas': 235.16, 'temperature': 33.79, 'vibration': 118.02}
+2026-06-02 21:35:03,811 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:03,812 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:03,812 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:03,826 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:03 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:03,860 | INFO | industrial_safety_system | Sensor data | raw={'gas': 341.78, 'temperature': 30.74, 'vibration': 129.45} | processed={'gas': 255.99, 'temperature': 32.64, 'vibration': 121.96}
+2026-06-02 21:35:03,951 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:03,958 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:03 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:03,991 | INFO | industrial_safety_system | Sensor data | raw={'gas': 223.6, 'temperature': 29.85, 'vibration': 140.42} | processed={'gas': 245.98, 'temperature': 32.12, 'vibration': 121.95}
+2026-06-02 21:35:04,081 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:04,085 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:04 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:04,127 | INFO | industrial_safety_system | Sensor data | raw={'gas': 238.81, 'temperature': 32.8, 'vibration': 127.99} | processed={'gas': 248.3, 'temperature': 30.88, 'vibration': 129.85}
+2026-06-02 21:35:04,221 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:04,226 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:04 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:04,268 | INFO | industrial_safety_system | Sensor data | raw={'gas': 185.01, 'temperature': 32.12, 'vibration': 83.89} | processed={'gas': 242.16, 'temperature': 30.98, 'vibration': 116.31}
+2026-06-02 21:35:04,352 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:04,357 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:04 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:04,377 | INFO | industrial_safety_system | Sensor data | raw={'gas': 202.26, 'temperature': 34.98, 'vibration': 104.49} | processed={'gas': 238.29, 'temperature': 32.1, 'vibration': 117.25}
+2026-06-02 21:35:04,459 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:04,462 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:04 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:04,503 | INFO | industrial_safety_system | Sensor data | raw={'gas': 355.57, 'temperature': 37.96, 'vibration': 137.42} | processed={'gas': 241.05, 'temperature': 33.54, 'vibration': 118.84}
+2026-06-02 21:35:04,593 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:04,600 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:04 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:04,626 | INFO | industrial_safety_system | Sensor data | raw={'gas': 203.59, 'temperature': 33.62, 'vibration': 106.18} | processed={'gas': 237.05, 'temperature': 34.3, 'vibration': 111.99}
+2026-06-02 21:35:04,708 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:04,714 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:04 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:04,743 | INFO | industrial_safety_system | Sensor data | raw={'gas': 231.44, 'temperature': 33.31, 'vibration': 146.94} | processed={'gas': 235.57, 'temperature': 34.4, 'vibration': 115.78}
+2026-06-02 21:35:04,827 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:04,833 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:04 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:04,864 | INFO | industrial_safety_system | Sensor data | raw={'gas': 299.96, 'temperature': 37.34, 'vibration': 159.43} | processed={'gas': 258.56, 'temperature': 35.44, 'vibration': 130.89}
+2026-06-02 21:35:04,959 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:04,964 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:04 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:05,007 | INFO | industrial_safety_system | Sensor data | raw={'gas': 356.1, 'temperature': 35.92, 'vibration': 95.0} | processed={'gas': 289.33, 'temperature': 35.63, 'vibration': 128.99}
+2026-06-02 21:35:05,097 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:05,102 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:05 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:05,131 | INFO | industrial_safety_system | Sensor data | raw={'gas': 351.7, 'temperature': 36.49, 'vibration': 174.43} | processed={'gas': 288.56, 'temperature': 35.34, 'vibration': 136.4}
+2026-06-02 21:35:05,221 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:05,228 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:05 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:05,260 | INFO | industrial_safety_system | Sensor data | raw={'gas': 338.95, 'temperature': 30.64, 'vibration': 159.13} | processed={'gas': 315.63, 'temperature': 34.74, 'vibration': 146.99}
+2026-06-02 21:35:05,349 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:05,354 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:05 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:05,382 | INFO | industrial_safety_system | Sensor data | raw={'gas': 233.81, 'temperature': 39.11, 'vibration': 164.19} | processed={'gas': 316.1, 'temperature': 35.9, 'vibration': 150.44}
+2026-06-02 21:35:05,464 | INFO | industrial_safety_system | PPE detections count: 1
+2026-06-02 21:35:05,472 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:05 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:05,508 | INFO | industrial_safety_system | Sensor data | raw={'gas': 188.86, 'temperature': 38.06, 'vibration': 136.4} | processed={'gas': 293.88, 'temperature': 36.04, 'vibration': 145.83}
+2026-06-02 21:35:05,595 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:05,603 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:05 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:05,628 | INFO | industrial_safety_system | Sensor data | raw={'gas': 227.86, 'temperature': 29.46, 'vibration': 108.29} | processed={'gas': 268.24, 'temperature': 34.75, 'vibration': 148.49}
+2026-06-02 21:35:05,709 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:05,714 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:05 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:05,743 | INFO | industrial_safety_system | Sensor data | raw={'gas': 248.89, 'temperature': 28.29, 'vibration': 122.59} | processed={'gas': 247.67, 'temperature': 33.11, 'vibration': 138.12}
+2026-06-02 21:35:05,819 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:05,825 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:05 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:05,844 | INFO | industrial_safety_system | Sensor data | raw={'gas': 216.94, 'temperature': 29.22, 'vibration': 150.89} | processed={'gas': 223.27, 'temperature': 32.83, 'vibration': 136.47}
+2026-06-02 21:35:05,944 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:05,950 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:05 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:05,974 | INFO | industrial_safety_system | Sensor data | raw={'gas': 202.66, 'temperature': 37.44, 'vibration': 118.34} | processed={'gas': 217.04, 'temperature': 32.49, 'vibration': 127.3}
+2026-06-02 21:35:06,073 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:06,077 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:06 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:06,116 | INFO | industrial_safety_system | Sensor data | raw={'gas': 188.58, 'temperature': 32.89, 'vibration': 91.38} | processed={'gas': 216.99, 'temperature': 31.46, 'vibration': 118.3}
+2026-06-02 21:35:06,202 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:06,208 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:06 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:06,241 | INFO | industrial_safety_system | Sensor data | raw={'gas': 295.47, 'temperature': 35.57, 'vibration': 107.24} | processed={'gas': 230.51, 'temperature': 32.68, 'vibration': 118.09}
+2026-06-02 21:35:06,328 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:06,333 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:06 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:06,367 | INFO | industrial_safety_system | Sensor data | raw={'gas': 344.66, 'temperature': 35.05, 'vibration': 177.21} | processed={'gas': 249.66, 'temperature': 34.03, 'vibration': 129.01}
+2026-06-02 21:35:06,447 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:06,453 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:06 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:06,476 | INFO | industrial_safety_system | Sensor data | raw={'gas': 211.58, 'temperature': 38.37, 'vibration': 149.33} | processed={'gas': 248.59, 'temperature': 35.86, 'vibration': 128.7}
+2026-06-02 21:35:06,583 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:06,592 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:06 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:06,633 | INFO | industrial_safety_system | Sensor data | raw={'gas': 260.51, 'temperature': 39.77, 'vibration': 137.23} | processed={'gas': 260.16, 'temperature': 36.33, 'vibration': 132.48}
+2026-06-02 21:35:06,725 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:06,731 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:06 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:06,758 | INFO | industrial_safety_system | Sensor data | raw={'gas': 319.89, 'temperature': 32.48, 'vibration': 108.1} | processed={'gas': 286.42, 'temperature': 36.25, 'vibration': 135.82}
+2026-06-02 21:35:06,858 | INFO | industrial_safety_system | PPE detections count: 1
+2026-06-02 21:35:06,863 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:06 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:06,897 | INFO | industrial_safety_system | Sensor data | raw={'gas': 197.31, 'temperature': 32.36, 'vibration': 171.27} | processed={'gas': 266.79, 'temperature': 35.61, 'vibration': 148.63}
+2026-06-02 21:35:06,979 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:06,985 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:06 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:07,013 | INFO | industrial_safety_system | Sensor data | raw={'gas': 215.23, 'temperature': 33.07, 'vibration': 167.51} | processed={'gas': 240.9, 'temperature': 35.21, 'vibration': 146.69}
+2026-06-02 21:35:07,105 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:07,111 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:07 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:07,145 | INFO | industrial_safety_system | Sensor data | raw={'gas': 269.46, 'temperature': 31.76, 'vibration': 100.98} | processed={'gas': 252.48, 'temperature': 33.89, 'vibration': 137.02}
+2026-06-02 21:35:07,228 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:07,236 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:07 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:07,269 | INFO | industrial_safety_system | Sensor data | raw={'gas': 221.37, 'temperature': 29.42, 'vibration': 88.89} | processed={'gas': 244.65, 'temperature': 31.82, 'vibration': 127.35}
+2026-06-02 21:35:07,371 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:07,449 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:07 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:07,471 | INFO | industrial_safety_system | Sensor data | raw={'gas': 292.56, 'temperature': 30.46, 'vibration': 144.17} | processed={'gas': 239.19, 'temperature': 31.41, 'vibration': 134.56}
+2026-06-02 21:35:07,549 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:07,549 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:07,550 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:07,550 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:07,554 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:07 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:07,582 | INFO | industrial_safety_system | Sensor data | raw={'gas': 191.88, 'temperature': 37.28, 'vibration': 144.26} | processed={'gas': 238.1, 'temperature': 32.4, 'vibration': 129.16}
+2026-06-02 21:35:07,669 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:07,669 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:07,669 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:07,675 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:07 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:07,706 | INFO | industrial_safety_system | Sensor data | raw={'gas': 254.98, 'temperature': 28.99, 'vibration': 153.53} | processed={'gas': 246.05, 'temperature': 31.58, 'vibration': 126.37}
+2026-06-02 21:35:07,791 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:07,797 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:07 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:07,829 | INFO | industrial_safety_system | Sensor data | raw={'gas': 252.16, 'temperature': 34.09, 'vibration': 135.75} | processed={'gas': 242.59, 'temperature': 32.05, 'vibration': 133.32}
+2026-06-02 21:35:07,929 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:07,929 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:07,930 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:07,930 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:07,935 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:07 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:07,970 | INFO | industrial_safety_system | Sensor data | raw={'gas': 205.29, 'temperature': 39.32, 'vibration': 166.56} | processed={'gas': 239.37, 'temperature': 34.03, 'vibration': 148.85}
+2026-06-02 21:35:08,056 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:08,056 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:08,056 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:08,062 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:08 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:08,096 | INFO | industrial_safety_system | Sensor data | raw={'gas': 204.8, 'temperature': 28.06, 'vibration': 93.18} | processed={'gas': 221.82, 'temperature': 33.55, 'vibration': 138.66}
+2026-06-02 21:35:08,177 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:08,182 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:08 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:08,221 | INFO | industrial_safety_system | Sensor data | raw={'gas': 312.43, 'temperature': 30.07, 'vibration': 156.95} | processed={'gas': 245.93, 'temperature': 32.11, 'vibration': 141.19}
+2026-06-02 21:35:08,309 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:08,316 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:08 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:08,344 | INFO | industrial_safety_system | Sensor data | raw={'gas': 215.56, 'temperature': 28.93, 'vibration': 122.77} | processed={'gas': 238.05, 'temperature': 32.09, 'vibration': 135.04}
+2026-06-02 21:35:08,432 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:08,440 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:08 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:08,474 | INFO | industrial_safety_system | Sensor data | raw={'gas': 241.56, 'temperature': 36.34, 'vibration': 172.84} | processed={'gas': 235.93, 'temperature': 32.54, 'vibration': 142.46}
+2026-06-02 21:35:08,562 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:08,562 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:08,562 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:08,563 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:08,567 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:08 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:08,600 | INFO | industrial_safety_system | Sensor data | raw={'gas': 297.87, 'temperature': 38.07, 'vibration': 170.66} | processed={'gas': 254.44, 'temperature': 32.29, 'vibration': 143.28}
+2026-06-02 21:35:08,684 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:08,685 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:08,689 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:08 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:08,724 | INFO | industrial_safety_system | Sensor data | raw={'gas': 214.33, 'temperature': 37.43, 'vibration': 81.63} | processed={'gas': 256.35, 'temperature': 34.17, 'vibration': 140.97}
+2026-06-02 21:35:08,809 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:08,810 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:08,814 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:08 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:08,848 | INFO | industrial_safety_system | Sensor data | raw={'gas': 212.37, 'temperature': 39.21, 'vibration': 162.43} | processed={'gas': 236.34, 'temperature': 36.0, 'vibration': 142.07}
+2026-06-02 21:35:08,932 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:08,932 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:08,939 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:08 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:08,972 | INFO | industrial_safety_system | Sensor data | raw={'gas': 204.42, 'temperature': 37.25, 'vibration': 98.9} | processed={'gas': 234.11, 'temperature': 37.66, 'vibration': 137.29}
+2026-06-02 21:35:09,048 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:09,048 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:09,053 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:09 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:09,081 | INFO | industrial_safety_system | Sensor data | raw={'gas': 257.02, 'temperature': 36.17, 'vibration': 166.21} | processed={'gas': 237.2, 'temperature': 37.63, 'vibration': 135.97}
+2026-06-02 21:35:09,170 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:09,170 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:09,176 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:09 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:09,204 | INFO | industrial_safety_system | Sensor data | raw={'gas': 265.18, 'temperature': 30.26, 'vibration': 87.53} | processed={'gas': 230.66, 'temperature': 36.06, 'vibration': 119.34}
+2026-06-02 21:35:09,285 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:09,285 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:09,285 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:09,290 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:09 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:09,313 | INFO | industrial_safety_system | Sensor data | raw={'gas': 341.2, 'temperature': 32.76, 'vibration': 155.06} | processed={'gas': 256.04, 'temperature': 35.13, 'vibration': 134.03}
+2026-06-02 21:35:09,398 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:09,404 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:09 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:09,438 | INFO | industrial_safety_system | Sensor data | raw={'gas': 354.29, 'temperature': 35.79, 'vibration': 150.0} | processed={'gas': 284.42, 'temperature': 34.45, 'vibration': 131.54}
+2026-06-02 21:35:09,519 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:09,520 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:09,520 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:09,520 | WARNING | industrial_safety_system | Alert handled: HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:09,528 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:09 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:09,563 | INFO | industrial_safety_system | Sensor data | raw={'gas': 272.52, 'temperature': 35.78, 'vibration': 103.8} | processed={'gas': 298.04, 'temperature': 34.15, 'vibration': 132.52}
+2026-06-02 21:35:09,654 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:09,654 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:09,659 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:09 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:09,688 | INFO | industrial_safety_system | Sensor data | raw={'gas': 236.44, 'temperature': 35.53, 'vibration': 114.36} | processed={'gas': 293.93, 'temperature': 34.02, 'vibration': 122.15}
+2026-06-02 21:35:09,774 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:09,774 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:09,778 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:09 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:09,812 | INFO | industrial_safety_system | Sensor data | raw={'gas': 329.69, 'temperature': 31.52, 'vibration': 178.51} | processed={'gas': 306.83, 'temperature': 34.28, 'vibration': 140.35}
+2026-06-02 21:35:09,895 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:09,896 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:09,901 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:09 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:09,938 | INFO | industrial_safety_system | Sensor data | raw={'gas': 194.54, 'temperature': 29.03, 'vibration': 82.74} | processed={'gas': 277.5, 'temperature': 33.53, 'vibration': 125.88}
+2026-06-02 21:35:10,025 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:10,025 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:10,031 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:10 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:10,064 | INFO | industrial_safety_system | Sensor data | raw={'gas': 293.74, 'temperature': 33.67, 'vibration': 150.11} | processed={'gas': 265.39, 'temperature': 33.11, 'vibration': 125.9}
+2026-06-02 21:35:10,146 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:10,146 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:35:10,151 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:10 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:10,173 | INFO | industrial_safety_system | Sensor data | raw={'gas': 227.23, 'temperature': 28.9, 'vibration': 175.24} | processed={'gas': 256.33, 'temperature': 31.73, 'vibration': 140.19}
+2026-06-02 21:35:10,258 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:10,259 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:35:10,264 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:10 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:10,298 | INFO | industrial_safety_system | Sensor data | raw={'gas': 290.76, 'temperature': 39.25, 'vibration': 102.52} | processed={'gas': 267.19, 'temperature': 32.47, 'vibration': 137.82}
+2026-06-02 21:35:10,383 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:10,384 | INFO | industrial_safety_system | PPE detections count: 5
+2026-06-02 21:35:10,389 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:10 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:10,422 | INFO | industrial_safety_system | Sensor data | raw={'gas': 241.0, 'temperature': 35.99, 'vibration': 128.99} | processed={'gas': 249.45, 'temperature': 33.37, 'vibration': 127.92}
+2026-06-02 21:35:10,509 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:10,509 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:10,514 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:10 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:10,546 | INFO | industrial_safety_system | Sensor data | raw={'gas': 204.13, 'temperature': 35.9, 'vibration': 161.56} | processed={'gas': 251.37, 'temperature': 34.74, 'vibration': 143.68}
+2026-06-02 21:35:10,634 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:10,634 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:10,640 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:10 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:10,670 | INFO | industrial_safety_system | Sensor data | raw={'gas': 244.78, 'temperature': 28.42, 'vibration': 151.69} | processed={'gas': 241.58, 'temperature': 33.69, 'vibration': 144.0}
+2026-06-02 21:35:10,756 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:10,757 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:10,763 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:10 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:10,794 | INFO | industrial_safety_system | Sensor data | raw={'gas': 257.28, 'temperature': 36.93, 'vibration': 167.7} | processed={'gas': 247.59, 'temperature': 35.3, 'vibration': 142.49}
+2026-06-02 21:35:10,878 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:10,879 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:10,884 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:10 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:10,918 | INFO | industrial_safety_system | Sensor data | raw={'gas': 243.48, 'temperature': 38.72, 'vibration': 108.95} | processed={'gas': 238.13, 'temperature': 35.19, 'vibration': 143.78}
+2026-06-02 21:35:10,994 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:10,994 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:11,001 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:10 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:11,026 | INFO | industrial_safety_system | Sensor data | raw={'gas': 249.32, 'temperature': 39.81, 'vibration': 108.73} | processed={'gas': 239.8, 'temperature': 35.96, 'vibration': 139.73}
+2026-06-02 21:35:11,108 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:11,109 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:11,115 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:11 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:11,136 | INFO | industrial_safety_system | Sensor data | raw={'gas': 230.82, 'temperature': 35.23, 'vibration': 150.45} | processed={'gas': 245.14, 'temperature': 35.82, 'vibration': 137.5}
+2026-06-02 21:35:11,230 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:11,230 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:11,235 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:11 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:11,262 | INFO | industrial_safety_system | Sensor data | raw={'gas': 222.51, 'temperature': 32.26, 'vibration': 133.73} | processed={'gas': 240.68, 'temperature': 36.59, 'vibration': 133.91}
+2026-06-02 21:35:11,344 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:11,344 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:11,348 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:11 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:11,373 | INFO | industrial_safety_system | Sensor data | raw={'gas': 307.69, 'temperature': 34.4, 'vibration': 146.57} | processed={'gas': 250.76, 'temperature': 36.08, 'vibration': 129.69}
+2026-06-02 21:35:11,451 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:11,451 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:11,456 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:11 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:11,481 | INFO | industrial_safety_system | Sensor data | raw={'gas': 303.35, 'temperature': 32.19, 'vibration': 160.29} | processed={'gas': 262.74, 'temperature': 34.78, 'vibration': 139.95}
+2026-06-02 21:35:11,576 | INFO | industrial_safety_system | Inferred 1 missing-helmet detections from person boxes.
+2026-06-02 21:35:11,577 | INFO | industrial_safety_system | PPE detections count: 4
+2026-06-02 21:35:11,583 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:11 | HIGH_RISK | Worker without helmet detected
+2026-06-02 21:35:11,606 | INFO | industrial_safety_system | Sensor data | raw={'gas': 246.4, 'temperature': 31.11, 'vibration': 169.07} | processed={'gas': 262.15, 'temperature': 33.04, 'vibration': 152.02}
+2026-06-02 21:35:11,685 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:11,686 | WARNING | industrial_safety_system | Buzzer alert triggered
+2026-06-02 21:35:11,686 | WARNING | industrial_safety_system | Alert handled: MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:11,691 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:11 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:11,715 | INFO | industrial_safety_system | Sensor data | raw={'gas': 275.74, 'temperature': 31.09, 'vibration': 122.16} | processed={'gas': 271.14, 'temperature': 32.21, 'vibration': 146.36}
+2026-06-02 21:35:11,796 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:11,801 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:11 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:11,825 | INFO | industrial_safety_system | Sensor data | raw={'gas': 239.32, 'temperature': 29.2, 'vibration': 167.29} | processed={'gas': 274.5, 'temperature': 31.6, 'vibration': 153.08}
+2026-06-02 21:35:11,909 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:11,914 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:11 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:11,933 | INFO | industrial_safety_system | Sensor data | raw={'gas': 217.38, 'temperature': 29.25, 'vibration': 142.88} | processed={'gas': 256.44, 'temperature': 30.57, 'vibration': 152.34}
+2026-06-02 21:35:12,027 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:12,033 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:12 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:12,072 | INFO | industrial_safety_system | Sensor data | raw={'gas': 222.53, 'temperature': 30.38, 'vibration': 94.86} | processed={'gas': 240.27, 'temperature': 30.21, 'vibration': 139.25}
+2026-06-02 21:35:12,157 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:12,162 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:12 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:12,197 | INFO | industrial_safety_system | Sensor data | raw={'gas': 569.16, 'temperature': 31.85, 'vibration': 110.72} | processed={'gas': 304.83, 'temperature': 30.35, 'vibration': 127.58}
+2026-06-02 21:35:12,283 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:12,288 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:12 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:12,317 | INFO | industrial_safety_system | Sensor data | raw={'gas': 325.62, 'temperature': 33.38, 'vibration': 96.07} | processed={'gas': 314.8, 'temperature': 30.81, 'vibration': 122.36}
+2026-06-02 21:35:12,395 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:12,401 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:12 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:12,441 | INFO | industrial_safety_system | Sensor data | raw={'gas': 182.03, 'temperature': 32.19, 'vibration': 171.27} | processed={'gas': 303.34, 'temperature': 31.41, 'vibration': 123.16}
+2026-06-02 21:35:12,525 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:12,531 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:12 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:12,566 | INFO | industrial_safety_system | Sensor data | raw={'gas': 197.1, 'temperature': 36.25, 'vibration': 130.19} | processed={'gas': 299.29, 'temperature': 32.81, 'vibration': 120.62}
+2026-06-02 21:35:12,651 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:12,657 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:12 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:12,683 | INFO | industrial_safety_system | Sensor data | raw={'gas': 221.58, 'temperature': 36.43, 'vibration': 131.64} | processed={'gas': 299.1, 'temperature': 34.02, 'vibration': 127.98}
+2026-06-02 21:35:12,767 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:12,774 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:12 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:12,800 | INFO | industrial_safety_system | Sensor data | raw={'gas': 279.37, 'temperature': 36.97, 'vibration': 97.81} | processed={'gas': 241.14, 'temperature': 35.04, 'vibration': 125.4}
+2026-06-02 21:35:12,881 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:12,886 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:12 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:12,908 | INFO | industrial_safety_system | Sensor data | raw={'gas': 284.09, 'temperature': 37.49, 'vibration': 96.25} | processed={'gas': 232.83, 'temperature': 35.87, 'vibration': 125.43}
+2026-06-02 21:35:12,991 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:12,996 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:12 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:13,034 | INFO | industrial_safety_system | Sensor data | raw={'gas': 287.6, 'temperature': 35.9, 'vibration': 149.85} | processed={'gas': 253.95, 'temperature': 36.61, 'vibration': 121.15}
+2026-06-02 21:35:13,112 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:13,117 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:13 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:13,138 | INFO | industrial_safety_system | Sensor data | raw={'gas': 202.02, 'temperature': 37.69, 'vibration': 173.46} | processed={'gas': 254.93, 'temperature': 36.9, 'vibration': 129.8}
+2026-06-02 21:35:13,222 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:13,227 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:13 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:13,251 | INFO | industrial_safety_system | Sensor data | raw={'gas': 284.94, 'temperature': 31.81, 'vibration': 149.58} | processed={'gas': 267.6, 'temperature': 35.97, 'vibration': 133.39}
+2026-06-02 21:35:13,335 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:13,339 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:13 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:13,376 | INFO | industrial_safety_system | Sensor data | raw={'gas': 237.69, 'temperature': 35.7, 'vibration': 144.25} | processed={'gas': 259.27, 'temperature': 35.72, 'vibration': 142.68}
+2026-06-02 21:35:13,455 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:13,459 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:13 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:13,485 | INFO | industrial_safety_system | Sensor data | raw={'gas': 297.13, 'temperature': 29.04, 'vibration': 176.39} | processed={'gas': 261.88, 'temperature': 34.03, 'vibration': 158.71}
+2026-06-02 21:35:13,566 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:13,572 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:13 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:13,594 | INFO | industrial_safety_system | Sensor data | raw={'gas': 293.57, 'temperature': 38.79, 'vibration': 98.3} | processed={'gas': 263.07, 'temperature': 34.61, 'vibration': 148.4}
+2026-06-02 21:35:13,674 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:13,678 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:13 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:13,717 | INFO | industrial_safety_system | Sensor data | raw={'gas': 263.03, 'temperature': 38.82, 'vibration': 96.95} | processed={'gas': 275.27, 'temperature': 34.83, 'vibration': 133.09}
+2026-06-02 21:35:13,802 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:13,807 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:13 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:13,834 | INFO | industrial_safety_system | Sensor data | raw={'gas': 194.56, 'temperature': 37.97, 'vibration': 136.81} | processed={'gas': 257.2, 'temperature': 36.06, 'vibration': 130.54}
+2026-06-02 21:35:13,929 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:13,935 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:13 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:13,960 | INFO | industrial_safety_system | Sensor data | raw={'gas': 195.7, 'temperature': 34.96, 'vibration': 94.63} | processed={'gas': 248.8, 'temperature': 35.92, 'vibration': 120.62}
+2026-06-02 21:35:14,048 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:14,052 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:14 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:14,073 | INFO | industrial_safety_system | Sensor data | raw={'gas': 202.54, 'temperature': 38.04, 'vibration': 112.9} | processed={'gas': 229.88, 'temperature': 37.72, 'vibration': 107.92}
+2026-06-02 21:35:14,161 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:14,165 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:14 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:14,192 | INFO | industrial_safety_system | Sensor data | raw={'gas': 203.46, 'temperature': 30.24, 'vibration': 101.44} | processed={'gas': 211.86, 'temperature': 36.01, 'vibration': 108.55}
+2026-06-02 21:35:14,272 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:14,277 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:14 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:14,305 | INFO | industrial_safety_system | Sensor data | raw={'gas': 327.93, 'temperature': 32.47, 'vibration': 140.27} | processed={'gas': 224.84, 'temperature': 34.74, 'vibration': 117.21}
+2026-06-02 21:35:14,391 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:14,398 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:14 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:14,425 | INFO | industrial_safety_system | Sensor data | raw={'gas': 347.52, 'temperature': 39.62, 'vibration': 134.15} | processed={'gas': 255.43, 'temperature': 35.07, 'vibration': 116.68}
+2026-06-02 21:35:14,523 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:14,528 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:14 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:14,551 | INFO | industrial_safety_system | Sensor data | raw={'gas': 202.64, 'temperature': 29.08, 'vibration': 114.07} | processed={'gas': 256.82, 'temperature': 33.89, 'vibration': 120.57}
+2026-06-02 21:35:14,633 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:14,639 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:14 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:14,668 | INFO | industrial_safety_system | Sensor data | raw={'gas': 354.03, 'temperature': 28.66, 'vibration': 97.36} | processed={'gas': 287.12, 'temperature': 32.01, 'vibration': 117.46}
+2026-06-02 21:35:14,756 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:14,761 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:14 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:14,791 | INFO | industrial_safety_system | Sensor data | raw={'gas': 181.48, 'temperature': 32.3, 'vibration': 166.68} | processed={'gas': 282.72, 'temperature': 32.43, 'vibration': 130.51}
+2026-06-02 21:35:14,885 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:14,891 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:14 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:14,929 | INFO | industrial_safety_system | Sensor data | raw={'gas': 272.82, 'temperature': 39.38, 'vibration': 104.29} | processed={'gas': 271.7, 'temperature': 33.81, 'vibration': 123.31}
+2026-06-02 21:35:15,026 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:15,032 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:15 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:15,070 | INFO | industrial_safety_system | Sensor data | raw={'gas': 344.42, 'temperature': 33.82, 'vibration': 175.2} | processed={'gas': 271.08, 'temperature': 32.65, 'vibration': 131.52}
+2026-06-02 21:35:15,157 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:15,161 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:15 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:15,197 | INFO | industrial_safety_system | Sensor data | raw={'gas': 337.53, 'temperature': 29.25, 'vibration': 137.47} | processed={'gas': 298.06, 'temperature': 32.68, 'vibration': 136.2}
+2026-06-02 21:35:15,277 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:15,281 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:15 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:15,306 | INFO | industrial_safety_system | Sensor data | raw={'gas': 279.21, 'temperature': 34.95, 'vibration': 117.72} | processed={'gas': 283.09, 'temperature': 33.94, 'vibration': 140.27}
+2026-06-02 21:35:15,390 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:15,395 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:15 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:15,432 | INFO | industrial_safety_system | Sensor data | raw={'gas': 183.24, 'temperature': 33.13, 'vibration': 144.87} | processed={'gas': 283.44, 'temperature': 34.11, 'vibration': 135.91}
+2026-06-02 21:35:15,513 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:15,518 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:15 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:15,557 | INFO | industrial_safety_system | Sensor data | raw={'gas': 343.26, 'temperature': 36.45, 'vibration': 158.71} | processed={'gas': 297.53, 'temperature': 33.52, 'vibration': 146.79}
+2026-06-02 21:35:15,669 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:15,673 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:15 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:15,701 | INFO | industrial_safety_system | Sensor data | raw={'gas': 293.42, 'temperature': 37.73, 'vibration': 118.02} | processed={'gas': 287.33, 'temperature': 34.3, 'vibration': 135.36}
+2026-06-02 21:35:15,791 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:15,796 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:15 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:15,819 | INFO | industrial_safety_system | Sensor data | raw={'gas': 206.44, 'temperature': 33.65, 'vibration': 166.52} | processed={'gas': 261.11, 'temperature': 35.18, 'vibration': 141.17}
+2026-06-02 21:35:15,915 | INFO | industrial_safety_system | PPE detections count: 3
+2026-06-02 21:35:15,923 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:15 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:15,947 | INFO | industrial_safety_system | Sensor data | raw={'gas': 275.51, 'temperature': 33.68, 'vibration': 153.37} | processed={'gas': 260.37, 'temperature': 34.93, 'vibration': 148.3}
+2026-06-02 21:35:16,036 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:16,042 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:16 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:16,069 | INFO | industrial_safety_system | Sensor data | raw={'gas': 206.79, 'temperature': 37.95, 'vibration': 122.86} | processed={'gas': 265.08, 'temperature': 35.89, 'vibration': 143.9}
+2026-06-02 21:35:16,159 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:16,163 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:16 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:16,182 | INFO | industrial_safety_system | Sensor data | raw={'gas': 305.17, 'temperature': 35.03, 'vibration': 118.95} | processed={'gas': 257.47, 'temperature': 35.61, 'vibration': 135.94}
+2026-06-02 21:35:16,295 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:16,299 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:16 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:16,332 | INFO | industrial_safety_system | Sensor data | raw={'gas': 331.57, 'temperature': 28.54, 'vibration': 87.8} | processed={'gas': 265.1, 'temperature': 33.77, 'vibration': 129.9}
+2026-06-02 21:35:16,425 | INFO | industrial_safety_system | PPE detections count: 2
+2026-06-02 21:35:16,429 | INFO | industrial_safety_system | Event logged | 2026-06-02 21:35:16 | MEDIUM_RISK | Combined multimodal anomaly score is elevated
+2026-06-02 21:35:16,473 | INFO | industrial_safety_system | Sensor data | raw={'gas': 333.46, 'temperature': 35.9, 'vibration': 128.08} | processed={'gas': 290.5, 'temperature': 34.22, 'vibration': 122.21}
+2026-06-02 21:35:16,506 | INFO | industrial_safety_system | Interrupted by user
+2026-06-02 21:35:16,616 | INFO | industrial_safety_system | Video source released and windows destroyed
+2026-06-02 21:35:16,617 | INFO | industrial_safety_system | System shutdown complete
