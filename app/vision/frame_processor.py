@@ -17,18 +17,26 @@ class FrameProcessor:
     ) -> Any:
         annotated = frame.copy()
 
-        # Draw restricted zone
-        cv2.rectangle(
-            annotated,
-            (self.zone["x1"], self.zone["y1"]),
-            (self.zone["x2"], self.zone["y2"]),
-            (255, 0, 0),
-            2,
-        )
+        # Draw a moving zone in front of the detected vehicle if present,
+        # otherwise keep the static restricted area.
+        dynamic_zone = self._compute_dynamic_zone(frame, vision_data)
+        if dynamic_zone is not None:
+            zx1, zy1, zx2, zy2 = dynamic_zone
+            zone_label = "Vehicle Ahead"
+        else:
+            zx1, zy1, zx2, zy2 = (
+                self.zone["x1"],
+                self.zone["y1"],
+                self.zone["x2"],
+                self.zone["y2"],
+            )
+            zone_label = "Restricted Zone"
+
+        cv2.rectangle(annotated, (zx1, zy1), (zx2, zy2), (255, 0, 0), 2)
         cv2.putText(
             annotated,
-            "Restricted Zone",
-            (self.zone["x1"], self.zone["y1"] - 10),
+            zone_label,
+            (zx1, max(zy1 - 10, 20)),
             cv2.FONT_HERSHEY_SIMPLEX,
             0.6,
             (255, 0, 0),
@@ -112,3 +120,64 @@ class FrameProcessor:
             y += 28
 
         return annotated
+
+    def _compute_dynamic_zone(self, frame: Any, vision_data: Dict[str, Any]) -> Any:
+        vehicle_bbox = self._find_vehicle_bbox(vision_data)
+        if vehicle_bbox is None:
+            return None
+        return self._zone_in_front_of_bbox(frame, vehicle_bbox)
+
+    def _find_vehicle_bbox(self, vision_data: Dict[str, Any]) -> Any:
+        vehicle_labels = {
+            "vehicle",
+            "car",
+            "truck",
+            "bus",
+            "van",
+            "motorbike",
+            "motorcycle",
+            "bicycle",
+            "bike",
+        }
+        for category in vision_data.values():
+            for det in category:
+                label = str(det.get("label", "")).lower()
+                if label in vehicle_labels:
+                    bbox = det.get("bbox")
+                    if bbox:
+                        return list(map(int, bbox))
+        return None
+
+    def _zone_in_front_of_bbox(self, frame: Any, bbox: Any) -> Any:
+        frame_h, frame_w = frame.shape[:2]
+        x1, y1, x2, y2 = bbox
+        width = x2 - x1
+        height = y2 - y1
+        center_x = (x1 + x2) // 2
+        center_y = (y1 + y2) // 2
+
+        if width >= height:
+            zone_h = max(int(height * 0.45), 40)
+            if center_x < frame_w / 2:
+                zx1 = x2 + 10
+                zx2 = min(zx1 + width, frame_w - 1)
+            else:
+                zx2 = x1 - 10
+                zx1 = max(zx2 - width, 0)
+            zy1 = max(y1 + height // 4, 0)
+            zy2 = min(zy1 + zone_h, frame_h - 1)
+        else:
+            zone_w = max(int(width * 0.8), 40)
+            if center_y < frame_h / 2:
+                zy1 = y2 + 10
+                zy2 = min(zy1 + height, frame_h - 1)
+            else:
+                zy2 = y1 - 10
+                zy1 = max(zy2 - height, 0)
+            zx1 = max(x1 + (width - zone_w) // 2, 0)
+            zx2 = min(zx1 + zone_w, frame_w - 1)
+
+        if zx2 <= zx1 or zy2 <= zy1:
+            return None
+
+        return (zx1, zy1, zx2, zy2)

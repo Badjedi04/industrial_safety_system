@@ -19,6 +19,9 @@ class CameraManager:
         self.video_files: List[Path] = []
         self.current_video_index = 0
         self.using_video = self.source in {"video", "video_folder"}
+        self.window_name = "Industrial Safety Monitoring"
+        self.window_mode = vision_config.get("window_mode", "fullscreen").lower()
+        self.window_created = False
 
     def start_camera(self) -> cv2.VideoCapture:
         if self.source == "video_folder":
@@ -40,6 +43,7 @@ class CameraManager:
         if not cap.isOpened():
             raise RuntimeError(f"Unable to open video source: {source_name}")
 
+        self._create_display_window()
         self.logger.info("Video source initialized successfully: %s", source_name)
         return cap
 
@@ -96,7 +100,19 @@ class CameraManager:
         if width != self.frame_width or height != self.frame_height:
             frame = cv2.resize(frame, (self.frame_width, self.frame_height), interpolation=cv2.INTER_AREA)
 
-        cv2.imshow("Industrial Safety Monitoring", frame)
+        cv2.imshow(self.window_name, frame)
+
+    def _create_display_window(self) -> None:
+        if self.window_created:
+            return
+
+        cv2.namedWindow(self.window_name, cv2.WINDOW_NORMAL)
+        if self.window_mode == "fullscreen":
+            cv2.setWindowProperty(self.window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+        else:
+            cv2.resizeWindow(self.window_name, self.frame_width, self.frame_height)
+
+        self.window_created = True
 
     def should_exit(self) -> bool:
         return (cv2.waitKey(1) & 0xFF) == ord("q")

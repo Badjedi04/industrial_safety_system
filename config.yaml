@@ -11,6 +11,7 @@ vision:
   confidence_threshold: 0.45
   frame_width: 960 # displayed frame width for camera or video
   frame_height: 540 # displayed frame height for camera or video
+  window_mode: "fullscreen" # options: normal, fullscreen
   use_default_yolo_if_missing: true
 
 sensor:
