@@ -3,11 +3,13 @@ project:
   version: "1.0"
 
 vision:
+  source: "video" # options: "camera" or "video"
+  video_path: "data/construction_site.mp4" # set to your construction site video file
   camera_index: 0
   ppe_model_path: "models/ppe_model.pt"
   confidence_threshold: 0.45
-  frame_width: 960
-  frame_height: 540
+  frame_width: 960 # displayed frame width for camera or video
+  frame_height: 540 # displayed frame height for camera or video
   use_default_yolo_if_missing: true
 
 sensor:

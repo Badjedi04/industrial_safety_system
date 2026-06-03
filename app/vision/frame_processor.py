@@ -35,7 +35,7 @@ class FrameProcessor:
             2,
         )
 
-        # Draw detection boxes
+        # Draw detection boxes with color-coding
         for category in vision_data.values():
             for det in category:
                 bbox = det.get("bbox")
@@ -45,16 +45,51 @@ class FrameProcessor:
                 label = det.get("label", "obj")
                 conf = det.get("confidence", 0.0)
 
-                cv2.rectangle(annotated, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                # Normalize label for matching
+                norm_label = str(label).lower()
+
+                # Color mapping: red for violations, green for compliant
+                if norm_label in {"no_helmet", "without_helmet", "no_vest", "no_personal_protection"}:
+                    color = (0, 0, 255)  # red
+                    badge_text = "NO HELMET" if "helmet" in norm_label else "NO PPE"
+                elif norm_label in {"helmet", "vest", "with_helmet", "with_vest"}:
+                    color = (0, 255, 0)  # green
+                    badge_text = None
+                elif norm_label == "person":
+                    color = (255, 255, 0)  # yellow
+                    badge_text = None
+                else:
+                    color = (0, 255, 0)
+                    badge_text = None
+
+                cv2.rectangle(annotated, (x1, y1), (x2, y2), color, 2)
                 cv2.putText(
                     annotated,
                     f"{label} {conf:.2f}",
                     (x1, max(y1 - 8, 20)),
                     cv2.FONT_HERSHEY_SIMPLEX,
                     0.55,
-                    (0, 255, 0),
+                    color,
                     2,
                 )
+
+                # Draw a prominent badge for no-helmet cases
+                if badge_text:
+                    badge_w, badge_h = 200, 30
+                    bx1 = x1
+                    by1 = max(y1 - badge_h - 8, 8)
+                    bx2 = bx1 + badge_w
+                    by2 = by1 + badge_h
+                    cv2.rectangle(annotated, (bx1, by1), (bx2, by2), (0, 0, 255), -1)
+                    cv2.putText(
+                        annotated,
+                        badge_text,
+                        (bx1 + 8, by1 + 22),
+                        cv2.FONT_HERSHEY_SIMPLEX,
+                        0.8,
+                        (255, 255, 255),
+                        2,
+                    )
 
         # Sensor panel
         y = 25

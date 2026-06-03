@@ -35,10 +35,14 @@ def main() -> None:
 
             frame = camera_manager.read_frame(camera)
             if frame is None:
+                if camera_manager.using_video:
+                    logger.info("Video stream ended")
+                    break
                 logger.warning("No frame received from camera")
                 continue
 
             ppe_results = ppe_detector.detect(frame)
+            logger.debug("PPE detections: %s", ppe_results)
             fall_results = fall_detector.detect(frame)
             zone_results = zone_detector.detect(frame)
 

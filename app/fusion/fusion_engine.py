@@ -20,10 +20,16 @@ class FusionEngine:
         return max(det.get("confidence", 0.0) for det in ppe_detections)
 
     def _has_person(self, ppe_detections: List[Dict[str, Any]]) -> bool:
-        return any(det.get("label") == "person" for det in ppe_detections)
+        return any(
+            det.get("label") == "person" or det.get("class_id") == 4
+            for det in ppe_detections
+        )
 
     def _has_no_helmet(self, ppe_detections: List[Dict[str, Any]]) -> bool:
-        return any(det.get("label") in {"no_helmet", "without_helmet"} for det in ppe_detections)
+        return any(
+            det.get("label") in {"no_helmet", "without_helmet"} or det.get("class_id") == 1
+            for det in ppe_detections
+        )
 
     def evaluate(
         self,
@@ -44,6 +50,9 @@ class FusionEngine:
         # Rule-based safety logic
         if gas_high and has_no_helmet:
             return "CRITICAL_ALERT", "Gas leak detected with missing head protection"
+
+        if has_no_helmet:
+            return "HIGH_RISK", "Worker without helmet detected"
 
         if fall_detected:
             return "EMERGENCY", "Worker fall detected"
