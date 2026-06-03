@@ -35,9 +35,10 @@ def main() -> None:
 
             frame = camera_manager.read_frame(camera)
             if frame is None:
-                if camera_manager.using_video:
+                if getattr(camera_manager, "using_video", False):
                     logger.info("Video stream ended")
                     break
+
                 logger.warning("No frame received from camera")
                 continue
 
