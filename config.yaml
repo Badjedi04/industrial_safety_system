@@ -13,6 +13,10 @@ vision:
   frame_height: 540 # displayed frame height for camera or video
   window_mode: "fullscreen" # options: normal, fullscreen
   use_default_yolo_if_missing: true
+  use_roboflow: false
+  roboflow_api_key: ""
+  roboflow_model_id: ""
+  roboflow_model_version: ""
 
 sensor:
   mode: "simulated" # simulated or serial

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industrial Safety Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <div>
+          <h1>Industrial Safety Dashboard</h1>
+          <p>Live system status, sensor telemetry, and recent safety events.</p>
+        </div>
+        <div id="last-updated" class="update-chip">Updating...</div>
+      </header>
+
+      <section class="cards" id="status-cards"></section>
+
+      <section class="events">
+        <div class="section-header">
+          <h2>Recent Events</h2>
+          <div id="events-count"></div>
+        </div>
+        <div class="table-wrapper">
+          <table id="events-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Decision</th>
+                <th>Reason</th>
+                <th>Gas</th>
+                <th>Temp</th>
+                <th>Vibration</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

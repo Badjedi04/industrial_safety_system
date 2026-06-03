@@ -1,0 +1,157 @@
+:root {
+  --bg: #141c2f;
+  --card: #1f2a44;
+  --text: #e8edf6;
+  --accent: #4fa1ff;
+  --accent-soft: #2c4b7b;
+  --danger: #ff5c6a;
+  --success: #4edba6;
+  --muted: #9fb3cc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at top, #22335f 0%, #0f1726 70%);
+  color: var(--text);
+}
+
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.update-chip {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(79, 161, 255, 0.14);
+  border: 1px solid rgba(79, 161, 255, 0.25);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: rgba(31, 42, 68, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 18px;
+  min-height: 130px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.card small {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.events {
+  background: rgba(31, 42, 68, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  padding: 12px 12px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+tbody tr {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+tbody td {
+  padding: 14px 12px;
+  color: var(--text);
+  vertical-align: top;
+}
+
+tbody tr:nth-child(2n) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.status-pill.safe {
+  background: rgba(78, 219, 166, 0.18);
+  color: var(--success);
+}
+
+.status-pill.alert {
+  background: rgba(255, 92, 106, 0.16);
+  color: var(--danger);
+}

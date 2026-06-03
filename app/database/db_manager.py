@@ -1,4 +1,5 @@
-from typing import Any, Dict
+from typing import Any, Dict, List, Optional
+import json
 import os
 import sqlite3
 from app.database.schema import CREATE_EVENTS_TABLE
@@ -12,6 +13,7 @@ class DBManager:
         os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
 
         self.connection = sqlite3.connect(self.db_path, check_same_thread=False)
+        self.connection.row_factory = sqlite3.Row
         self._initialize()
 
     def _initialize(self) -> None:
@@ -37,3 +39,43 @@ class DBManager:
             (timestamp, decision, reason, sensor_data, vision_data),
         )
         self.connection.commit()
+
+    def get_recent_events(self, limit: int = 50) -> List[Dict[str, Any]]:
+        cursor = self.connection.cursor()
+        cursor.execute(
+            "SELECT id, timestamp, decision, reason, sensor_data, vision_data "
+            "FROM events ORDER BY id DESC LIMIT ?",
+            (limit,),
+        )
+        rows = cursor.fetchall()
+        events: List[Dict[str, Any]] = []
+        for row in rows:
+            events.append(
+                {
+                    "id": row["id"],
+                    "timestamp": row["timestamp"],
+                    "decision": row["decision"],
+                    "reason": row["reason"],
+                    "sensor_data": json.loads(row["sensor_data"]),
+                    "vision_data": json.loads(row["vision_data"]),
+                }
+            )
+        return events
+
+    def get_latest_event(self) -> Optional[Dict[str, Any]]:
+        cursor = self.connection.cursor()
+        cursor.execute(
+            "SELECT id, timestamp, decision, reason, sensor_data, vision_data "
+            "FROM events ORDER BY id DESC LIMIT 1"
+        )
+        row = cursor.fetchone()
+        if row is None:
+            return None
+        return {
+            "id": row["id"],
+            "timestamp": row["timestamp"],
+            "decision": row["decision"],
+            "reason": row["reason"],
+            "sensor_data": json.loads(row["sensor_data"]),
+            "vision_data": json.loads(row["vision_data"]),
+        }

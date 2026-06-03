@@ -10,16 +10,23 @@ class PPEDetector:
         self.logger = logger
         vision_cfg = config["vision"]
         model_path = vision_cfg["ppe_model_path"]
-        if not os.path.exists(model_path) and vision_cfg.get("use_default_yolo_if_missing", True):
+        use_roboflow = vision_cfg.get("use_roboflow", False)
+        if use_roboflow:
+            logger.info("Roboflow integration is enabled for PPE detection")
+        elif not os.path.exists(model_path) and vision_cfg.get("use_default_yolo_if_missing", True):
             self.logger.warning(
                 "Custom PPE model not found at %s. Using default YOLO fallback; helmet/no-helmet alerts may not work correctly.",
                 model_path,
             )
 
-        self.model = ModelLoader.load_yolo_model(
+        self.model = ModelLoader.load_model(
             model_path=model_path,
             use_default_if_missing=vision_cfg.get("use_default_yolo_if_missing", True),
             logger=logger,
+            use_roboflow=use_roboflow,
+            roboflow_api_key=vision_cfg.get("roboflow_api_key", ""),
+            roboflow_model_id=vision_cfg.get("roboflow_model_id", ""),
+            roboflow_model_version=vision_cfg.get("roboflow_model_version", ""),
         )
         self.conf_threshold = vision_cfg["confidence_threshold"]
         self.class_names = self._build_class_names(self.model.names)
