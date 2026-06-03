@@ -97,24 +97,31 @@ class PPEDetector:
         width = max(1, x2 - x1)
         height = max(1, y2 - y1)
         head_top = y1
-        head_bottom = y1 + max(1, int(height * 0.35))
-        head_left = x1 + max(0, int(width * 0.15))
-        head_right = x2 - max(0, int(width * 0.15))
+        head_bottom = y1 + max(1, int(height * 0.22))
+        head_left = x1 + max(0, int(width * 0.25))
+        head_right = x2 - max(0, int(width * 0.25))
 
         head_crop = frame[head_top:head_bottom, head_left:head_right]
         if head_crop.size == 0:
             return False
 
         hsv = cv2.cvtColor(head_crop, cv2.COLOR_BGR2HSV)
-        yellow_mask = cv2.inRange(hsv, (10, 80, 100), (40, 255, 255))
-        white_mask = cv2.inRange(hsv, (0, 0, 180), (180, 60, 255))
-        combined = cv2.bitwise_or(yellow_mask, white_mask)
-        helmet_pixels = cv2.countNonZero(combined)
+        yellow_mask = cv2.inRange(hsv, (15, 80, 100), (40, 255, 255))
+        orange_mask = cv2.inRange(hsv, (5, 80, 100), (20, 255, 255))
+        white_mask = cv2.inRange(hsv, (0, 0, 180), (180, 40, 255))
+        helmet_mask = cv2.bitwise_or(yellow_mask, orange_mask)
+        helmet_mask = cv2.bitwise_or(helmet_mask, white_mask)
+
+        kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+        helmet_mask = cv2.morphologyEx(helmet_mask, cv2.MORPH_OPEN, kernel)
+
+        helmet_pixels = cv2.countNonZero(helmet_mask)
         total_pixels = head_crop.shape[0] * head_crop.shape[1]
         if total_pixels == 0:
             return False
+
         helmet_fraction = helmet_pixels / float(total_pixels)
-        return helmet_fraction >= 0.18
+        return helmet_fraction >= 0.12
 
     def _infer_no_helmet(self, frame: Any, detections: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         if any(self._is_no_helmet_label(det["label"]) for det in detections):
