@@ -7,3 +7,4 @@ numpy
 flask
 torch
 torchvision
+psutil
